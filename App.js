@@ -1,15 +1,13 @@
-import { View } from 'react-native';
-import FetcherPrototype from './components/fetcherproto';
-import NewsCard from "./components/NewsCard"
+import { SafeAreaProvider } from 'react-native-safe-area-context'
+import BottomNavigation from "./components/navigators/BottomNavigation"
+import { NavigationContainer } from "@react-navigation/native"
 
 export default function App() {
   return (
-    <View>
-      {/*<FetcherPrototype />*/}
-      <NewsCard />
-    </View>
-  );
+    <SafeAreaProvider>
+      <NavigationContainer>
+        <BottomNavigation />
+      </NavigationContainer>
+    </SafeAreaProvider>
+  )
 }
-
-
-
