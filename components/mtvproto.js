@@ -1,10 +1,9 @@
-{/*
 import { useState } from "react"
 import {View, Text} from "react-native"
 
 const parseString = require('react-native-xml2js').parseString
-export default function HsFetcher() {                             //fetches and compiles data from the hs.fi rss feed
-  const link = "https://www.hs.fi/rss/tuoreimmat.xml"
+export default function MtvProto() {                             //fetches and compiles data from the hs.fi rss feed
+  const link = "https://api.mtvuutiset.fi/mtvuutiset/api/feed/rss/uutiset_uusimmat"
 
   const [news, setNews] = useState([])
   const [hasFetched, setHasFetched] = useState(false)
@@ -32,7 +31,6 @@ export default function HsFetcher() {                             //fetches and 
         return
       }
       const feed = xmlDoc.RSS.CHANNEL[0].ITEM
-  
       let title = ""
       let desc = ""
       let date = new Date()
@@ -46,7 +44,6 @@ export default function HsFetcher() {                             //fetches and 
         if(currNode?.TITLE) {
           try {
             title = currNode.TITLE[0]
-            title = title.replace(/^.+?\| /, "")
             desc = currNode.DESCRIPTION[0]
             date = currNode.PUBDATE
             date = new Date(date)
@@ -69,7 +66,7 @@ export default function HsFetcher() {                             //fetches and 
     }
 
     catch (exception) {
-      setNews([createNewsObject("Error has occured in HS fetching", "Error has occured in HS fetching", "", "")])
+      setNews([createNewsObject("Error has occured in Mtv fetching", "Error has occured in Mtv fetching", "", "")])
       alert(exception)
     }
     
@@ -110,4 +107,3 @@ function NewsCardFoo({ title, description, releaseDate }) {
     )
   
 }
-*/}
