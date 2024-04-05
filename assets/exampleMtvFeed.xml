@@ -1,0 +1,1223 @@
+<rss version="2.0"
+    xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title>MTVuutiset.fi - Uutiset</title>
+        <link>https://www.mtvuutiset.fi/</link>
+        <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="https://www.mtvuutiset.fi/api/feed/rss/uutiset_uusimmat" />
+        <description>MTVuutiset.fi - Uusimmat uutiset</description>
+        <language>fi-FI</language>
+        <copyright>MTV Oy</copyright>
+        <image>
+            <url>http://st.mtvuutiset.fi/static/images/mtv-logo-64px.png</url>
+            <title>MTVuutiset.fi - Uutiset</title>
+            <link>https://www.mtvuutiset.fi/</link>
+        </image>
+        <item>
+            <title>Israel iskenyt arvoalueelle Syyrian pääkaupunkiin: Järjestö kertoo useista kuolonuhreista</title>
+            <link>https://www.mtvuutiset.fi/artikkeli/israel-iskenyt-arvoalueelle-syyrian-paakaupunkiin-jarjesto-kertoo-useista-kuolonuhreista/8909702</link>
+            <guid isPermaLink="false">cmid://8909702</guid>
+            <pubDate>01 Apr 2024 19:25:19 +0300</pubDate>
+            <category>Uutiset</category>
+            <enclosure url="https://im.mtvuutiset.fi/image/8603216/landscape16_9/1920/1080/223920c3d71b8ace5f0c75e44e0f1974/oi/0201-damaskos.jpg" type="image/jpeg" />
+            <media:group>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8603216/landscape16_9/1024/576/223920c3d71b8ace5f0c75e44e0f1974/Gu/0201-damaskos.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "576"
+                    width     = "1024">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8603216/landscape16_9/792/446/223920c3d71b8ace5f0c75e44e0f1974/RZ/0201-damaskos.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "446"
+                    width     = "792">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8603216/landscape16_9/640/360/223920c3d71b8ace5f0c75e44e0f1974/ow/0201-damaskos.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "360"
+                    width     = "640">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8603216/landscape16_9/496/279/223920c3d71b8ace5f0c75e44e0f1974/fW/0201-damaskos.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "279"
+                    width     = "496">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8603216/landscape16_9/360/203/223920c3d71b8ace5f0c75e44e0f1974/cL/0201-damaskos.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "203"
+                    width     = "360">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8603216/landscape16_9/240/135/223920c3d71b8ace5f0c75e44e0f1974/ZY/0201-damaskos.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "135"
+                    width     = "240">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8603216/landscape16_9/180/101/223920c3d71b8ace5f0c75e44e0f1974/Kg/0201-damaskos.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "101"
+                    width     = "180">
+                </media:content>
+                <media:content  url       = "https://im.mtvuutiset.fi/image/8603216/portrait/576/960/37108ffef34da09997527e74b099053/Gl/0201-damaskos.jpg"
+                      type      = "image/jpeg"
+                      medium    = "image"
+                      isDefault = "false"
+                      height    = "960"
+                      width     = "576">
+                </media:content>
+            </media:group>
+            <description>Useita ihmisiä on kuollut Israelin iskussa Syyrian pääkaupungissa Damaskoksessa, sanoo Syyrian sotaa seuraava Syrian Observatory for Human Rights -järjestö.</description>
+        </item>
+        <item>
+            <title>Etelä-Suomessa tänään koettu lämpöaalto poikkeuksellinen</title>
+            <link>https://www.mtvuutiset.fi/artikkeli/etela-suomessa-tanaan-koettu-lampoaalto-poikkeuksellinen/8909708</link>
+            <guid isPermaLink="false">cmid://8909708</guid>
+            <pubDate>01 Apr 2024 18:58:09 +0300</pubDate>
+            <category>Uutiset</category>
+            <enclosure url="https://im.mtvuutiset.fi/image/6837780/landscape16_9/1920/1080/b07c560d5005753d446452b3f54ee678/SC/kevat-aop.jpg" type="image/jpeg" />
+            <media:group>
+                <media:content url       = "https://im.mtvuutiset.fi/image/6837780/landscape16_9/1024/576/b07c560d5005753d446452b3f54ee678/da/kevat-aop.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "576"
+                    width     = "1024">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/6837780/landscape16_9/792/446/b07c560d5005753d446452b3f54ee678/ph/kevat-aop.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "446"
+                    width     = "792">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/6837780/landscape16_9/640/360/b07c560d5005753d446452b3f54ee678/dk/kevat-aop.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "360"
+                    width     = "640">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/6837780/landscape16_9/496/279/b07c560d5005753d446452b3f54ee678/eS/kevat-aop.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "279"
+                    width     = "496">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/6837780/landscape16_9/360/203/b07c560d5005753d446452b3f54ee678/vn/kevat-aop.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "203"
+                    width     = "360">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/6837780/landscape16_9/240/135/b07c560d5005753d446452b3f54ee678/pg/kevat-aop.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "135"
+                    width     = "240">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/6837780/landscape16_9/180/101/b07c560d5005753d446452b3f54ee678/lM/kevat-aop.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "101"
+                    width     = "180">
+                </media:content>
+            </media:group>
+            <description>Lämpötilat viilenevät Etelä-Suomessa jälleen alkuviikosta, ja tiedossa on myös lumisateita.</description>
+        </item>
+        <item>
+            <title>Mädäntyneitä ruumiita löydetty sairaala-alueelta, väittää Hamasin alainen terveysministeriö</title>
+            <link>https://www.mtvuutiset.fi/artikkeli/madantyneita-ruumiita-loydetty-sairaala-alueelta-vaittaa-hamasin-alainen-terveysministerio/8909464</link>
+            <guid isPermaLink="false">cmid://8909464</guid>
+            <pubDate>01 Apr 2024 18:50:19 +0300</pubDate>
+            <category>Uutiset</category>
+            <enclosure url="https://im.mtvuutiset.fi/image/8909462/landscape16_9/1920/1080/fbf408326a0d0d6698bf8ce87848e97b/tg/rafah-lk-1-4-2024.jpg" type="image/jpeg" />
+            <media:group>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909462/landscape16_9/1024/576/fbf408326a0d0d6698bf8ce87848e97b/oo/rafah-lk-1-4-2024.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "576"
+                    width     = "1024">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909462/landscape16_9/792/446/fbf408326a0d0d6698bf8ce87848e97b/EP/rafah-lk-1-4-2024.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "446"
+                    width     = "792">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909462/landscape16_9/640/360/fbf408326a0d0d6698bf8ce87848e97b/fm/rafah-lk-1-4-2024.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "360"
+                    width     = "640">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909462/landscape16_9/496/279/fbf408326a0d0d6698bf8ce87848e97b/kk/rafah-lk-1-4-2024.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "279"
+                    width     = "496">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909462/landscape16_9/360/203/fbf408326a0d0d6698bf8ce87848e97b/ZZ/rafah-lk-1-4-2024.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "203"
+                    width     = "360">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909462/landscape16_9/240/135/fbf408326a0d0d6698bf8ce87848e97b/Nq/rafah-lk-1-4-2024.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "135"
+                    width     = "240">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909462/landscape16_9/180/101/fbf408326a0d0d6698bf8ce87848e97b/fe/rafah-lk-1-4-2024.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "101"
+                    width     = "180">
+                </media:content>
+            </media:group>
+            <description>Israelin sotilasajoneuvojen ja panssarivaunujen kerrotaan vetäytyneen saarretun sairaalan lähistöltä.</description>
+        </item>
+        <item>
+            <title>Bussin ja henkilöauton nokkakolari tunnelissa Helsingissä  – poliisi epäilee rikosta</title>
+            <link>https://www.mtvuutiset.fi/artikkeli/bussi-ja-henkiloauto-kolaroivat-helsingin-paloheinassa-silminnakija-bussitunnelin-luona-kova-pamaus/8909664</link>
+            <guid isPermaLink="false">cmid://8909664</guid>
+            <pubDate>01 Apr 2024 18:48:52 +0300</pubDate>
+            <category>Uutiset</category>
+            <enclosure url="https://im.mtvuutiset.fi/image/8909672/landscape16_9/1920/1080/f4c6253beec9d626d94a2e15a6694e66/pb/tulipalo-1-4-2024.jpg" type="image/jpeg" />
+            <media:group>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909672/landscape16_9/1024/576/f4c6253beec9d626d94a2e15a6694e66/kj/tulipalo-1-4-2024.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "576"
+                    width     = "1024">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909672/landscape16_9/792/446/f4c6253beec9d626d94a2e15a6694e66/AK/tulipalo-1-4-2024.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "446"
+                    width     = "792">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909672/landscape16_9/640/360/f4c6253beec9d626d94a2e15a6694e66/bh/tulipalo-1-4-2024.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "360"
+                    width     = "640">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909672/landscape16_9/496/279/f4c6253beec9d626d94a2e15a6694e66/gf/tulipalo-1-4-2024.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "279"
+                    width     = "496">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909672/landscape16_9/360/203/f4c6253beec9d626d94a2e15a6694e66/VU/tulipalo-1-4-2024.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "203"
+                    width     = "360">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909672/landscape16_9/240/135/f4c6253beec9d626d94a2e15a6694e66/Jl/tulipalo-1-4-2024.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "135"
+                    width     = "240">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909672/landscape16_9/180/101/f4c6253beec9d626d94a2e15a6694e66/bZ/tulipalo-1-4-2024.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "101"
+                    width     = "180">
+                </media:content>
+            </media:group>
+            <description>Poliisi tutkii nokkakolaria törkeänä liikenneturvallisuuden vaarantamisena.</description>
+        </item>
+        <item>
+            <title>Uudet leikkaukset ja muutokset voimaan tänään: Iskevät 500 000 Kelan asiakkaaseen</title>
+            <link>https://www.mtvuutiset.fi/artikkeli/uudet-leikkaukset-ja-muutokset-voimaan-tanaan-iskevat-500-000-kelan-asiakkaaseen/8909688</link>
+            <guid isPermaLink="false">cmid://8909688</guid>
+            <pubDate>01 Apr 2024 18:25:02 +0300</pubDate>
+            <category>Uutiset</category>
+            <enclosure url="https://im.mtvuutiset.fi/image/8705358/landscape16_9/1920/1080/b9c103a99fbad70baa9e671a3459b9db/Uh/kelan-logo-aop.jpg" type="image/jpeg" />
+            <media:group>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8705358/landscape16_9/1024/576/b9c103a99fbad70baa9e671a3459b9db/cV/kelan-logo-aop.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "576"
+                    width     = "1024">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8705358/landscape16_9/792/446/b9c103a99fbad70baa9e671a3459b9db/xo/kelan-logo-aop.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "446"
+                    width     = "792">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8705358/landscape16_9/640/360/b9c103a99fbad70baa9e671a3459b9db/lL/kelan-logo-aop.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "360"
+                    width     = "640">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8705358/landscape16_9/496/279/b9c103a99fbad70baa9e671a3459b9db/Bd/kelan-logo-aop.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "279"
+                    width     = "496">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8705358/landscape16_9/360/203/b9c103a99fbad70baa9e671a3459b9db/He/kelan-logo-aop.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "203"
+                    width     = "360">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8705358/landscape16_9/240/135/b9c103a99fbad70baa9e671a3459b9db/Kz/kelan-logo-aop.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "135"
+                    width     = "240">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8705358/landscape16_9/180/101/b9c103a99fbad70baa9e671a3459b9db/UX/kelan-logo-aop.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "101"
+                    width     = "180">
+                </media:content>
+            </media:group>
+            <description>Kela on varautunut siihen, että leikkaukset pudottavat lisää ihmisiä toimeentulotuen varaan.</description>
+        </item>
+        <item>
+            <title>Ranskalaisen hotellin pihamullan alta kaivettiin esiin aito keskiaikainen linna</title>
+            <link>https://www.mtvuutiset.fi/artikkeli/ranskalaisen-hotellin-pihamullan-alta-kaivettiin-esiin-aito-keskiaikainen-linna/8909684</link>
+            <guid isPermaLink="false">cmid://8909684</guid>
+            <pubDate>01 Apr 2024 18:13:26 +0300</pubDate>
+            <category>Uutiset</category>
+            <enclosure url="https://im.mtvuutiset.fi/image/7530430/landscape16_9/1920/1080/654bb2eb16eb84e41158d9c639b6d1bc/AR/25-g355rh.jpg" type="image/jpeg" />
+            <media:group>
+                <media:content url       = "https://im.mtvuutiset.fi/image/7530430/landscape16_9/1024/576/654bb2eb16eb84e41158d9c639b6d1bc/El/25-g355rh.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "576"
+                    width     = "1024">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/7530430/landscape16_9/792/446/654bb2eb16eb84e41158d9c639b6d1bc/Ms/25-g355rh.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "446"
+                    width     = "792">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/7530430/landscape16_9/640/360/654bb2eb16eb84e41158d9c639b6d1bc/Nr/25-g355rh.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "360"
+                    width     = "640">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/7530430/landscape16_9/496/279/654bb2eb16eb84e41158d9c639b6d1bc/jF/25-g355rh.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "279"
+                    width     = "496">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/7530430/landscape16_9/360/203/654bb2eb16eb84e41158d9c639b6d1bc/qS/25-g355rh.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "203"
+                    width     = "360">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/7530430/landscape16_9/240/135/654bb2eb16eb84e41158d9c639b6d1bc/bf/25-g355rh.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "135"
+                    width     = "240">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/7530430/landscape16_9/180/101/654bb2eb16eb84e41158d9c639b6d1bc/XL/25-g355rh.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "101"
+                    width     = "180">
+                </media:content>
+            </media:group>
+            <description>Arkeologit ovat kaivaneet Ranskan Bretagnessa esille keskiaikaisen linnan rauniot.</description>
+        </item>
+        <item>
+            <title>Yhdysvaltalaistoimittajan tutkintavankeus jatkuu Venäjällä</title>
+            <link>https://www.mtvuutiset.fi/artikkeli/yhdysvaltalaistoimittajan-tutkintavankeus-jatkuu-venajalla/8909654</link>
+            <guid isPermaLink="false">cmid://8909654</guid>
+            <pubDate>01 Apr 2024 17:27:02 +0300</pubDate>
+            <category>Uutiset</category>
+            <enclosure url="https://im.mtvuutiset.fi/image/8909662/landscape16_9/1920/1080/f70e3a0419c2987acf0658869b71105c/Yk/lk-alsu-kurmasheva.jpg" type="image/jpeg" />
+            <media:group>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909662/landscape16_9/1024/576/f70e3a0419c2987acf0658869b71105c/yQ/lk-alsu-kurmasheva.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "576"
+                    width     = "1024">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909662/landscape16_9/792/446/f70e3a0419c2987acf0658869b71105c/dL/lk-alsu-kurmasheva.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "446"
+                    width     = "792">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909662/landscape16_9/640/360/f70e3a0419c2987acf0658869b71105c/Ai/lk-alsu-kurmasheva.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "360"
+                    width     = "640">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909662/landscape16_9/496/279/f70e3a0419c2987acf0658869b71105c/TI/lk-alsu-kurmasheva.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "279"
+                    width     = "496">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909662/landscape16_9/360/203/f70e3a0419c2987acf0658869b71105c/kt/lk-alsu-kurmasheva.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "203"
+                    width     = "360">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909662/landscape16_9/240/135/f70e3a0419c2987acf0658869b71105c/la/lk-alsu-kurmasheva.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "135"
+                    width     = "240">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909662/landscape16_9/180/101/f70e3a0419c2987acf0658869b71105c/GC/lk-alsu-kurmasheva.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "101"
+                    width     = "180">
+                </media:content>
+            </media:group>
+            <description>Alsu Kurmashevan tutkintavankeutta jatketaan kesäkuun 5. päivään saakka</description>
+        </item>
+        <item>
+            <title>Kesä tuli kylään! Helsinki-Vantaalla jopa 17,7 astetta</title>
+            <link>https://www.mtvuutiset.fi/artikkeli/kevaan-lampoennatys-rikki-nyt-kannattaa-nauttia-silla-kohta-taas-kylmenee/8909564</link>
+            <guid isPermaLink="false">cmid://8909564</guid>
+            <pubDate>01 Apr 2024 17:24:40 +0300</pubDate>
+            <category>Uutiset</category>
+            <enclosure url="https://im.mtvuutiset.fi/image/8909598/landscape16_9/1920/1080/53c93983b6b535f970e647eff5bc3659/vE/lk-saa.jpg" type="image/jpeg" />
+            <media:group>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909598/landscape16_9/1024/576/53c93983b6b535f970e647eff5bc3659/Cs/lk-saa.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "576"
+                    width     = "1024">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909598/landscape16_9/792/446/53c93983b6b535f970e647eff5bc3659/FH/lk-saa.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "446"
+                    width     = "792">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909598/landscape16_9/640/360/53c93983b6b535f970e647eff5bc3659/xq/lk-saa.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "360"
+                    width     = "640">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909598/landscape16_9/496/279/53c93983b6b535f970e647eff5bc3659/Aw/lk-saa.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "279"
+                    width     = "496">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909598/landscape16_9/360/203/53c93983b6b535f970e647eff5bc3659/jd/lk-saa.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "203"
+                    width     = "360">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909598/landscape16_9/240/135/53c93983b6b535f970e647eff5bc3659/sa/lk-saa.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "135"
+                    width     = "240">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909598/landscape16_9/180/101/53c93983b6b535f970e647eff5bc3659/fq/lk-saa.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "101"
+                    width     = "180">
+                </media:content>
+            </media:group>
+            <description>Sääennusteen mukaan sää kylmenee viikon puolivälissä. </description>
+        </item>
+        <item>
+            <title>Kommentti: E-urheilumaailman suurin &#034;Torilla tavataan!&#034; – Aleksi &#034;Aleksib&#034; Virolainen, 27, teki Counter-Strike -turnausvoitollaan historiaa</title>
+            <link>https://www.mtvuutiset.fi/artikkeli/kommentti-e-urheilumaailman-suurin-torilla-tavataan-aleksi-aleksib-virolainen-27-teki-counter-strike-turnausvoitollaan-historiaa/8909636</link>
+            <guid isPermaLink="false">cmid://8909636</guid>
+            <pubDate>01 Apr 2024 17:07:00 +0300</pubDate>
+            <category>Uutiset</category>
+            <enclosure url="https://im.mtvuutiset.fi/image/8909638/landscape16_9/1200/675/80739949ac2c99f68bb50bec3b496110/BC/aleksi-virolainen-voitto-010424.jpg" type="image/jpeg" />
+            <media:group>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909638/landscape16_9/1024/576/80739949ac2c99f68bb50bec3b496110/vO/aleksi-virolainen-voitto-010424.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "576"
+                    width     = "1024">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909638/landscape16_9/792/446/80739949ac2c99f68bb50bec3b496110/SJ/aleksi-virolainen-voitto-010424.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "446"
+                    width     = "792">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909638/landscape16_9/640/360/80739949ac2c99f68bb50bec3b496110/pg/aleksi-virolainen-voitto-010424.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "360"
+                    width     = "640">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909638/landscape16_9/496/279/80739949ac2c99f68bb50bec3b496110/cG/aleksi-virolainen-voitto-010424.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "279"
+                    width     = "496">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909638/landscape16_9/360/203/80739949ac2c99f68bb50bec3b496110/Fr/aleksi-virolainen-voitto-010424.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "203"
+                    width     = "360">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909638/landscape16_9/240/135/80739949ac2c99f68bb50bec3b496110/KY/aleksi-virolainen-voitto-010424.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "135"
+                    width     = "240">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909638/landscape16_9/180/101/80739949ac2c99f68bb50bec3b496110/PA/aleksi-virolainen-voitto-010424.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "101"
+                    width     = "180">
+                </media:content>
+            </media:group>
+            <description>Suomalainen Counter-Strike –ammattipelaaja Aleksi “Aleksib” Virolainen voitti myöhään sunnuntaina Counter-Strike -ampumapelin arvostetuimman major-turnauksen Kööpenhaminassa. </description>
+        </item>
+        <item>
+            <title>Richard löysi Englannin suurimman kultakimpaleen puolikuolleella metallinpaljastimella</title>
+            <link>https://www.mtvuutiset.fi/artikkeli/richard-loysi-englannin-suurimman-kultakimpaleen-puolikuolleella-metallinpaljastimella/8909646</link>
+            <guid isPermaLink="false">cmid://8909646</guid>
+            <pubDate>01 Apr 2024 17:06:48 +0300</pubDate>
+            <category>Uutiset</category>
+            <enclosure url="https://im.mtvuutiset.fi/image/8909652/landscape16_9/1920/1080/dd67de649ffeafb3a6168ac4c92bc66a/hQ/16-1-132310068.jpg" type="image/jpeg" />
+            <media:group>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909652/landscape16_9/1024/576/dd67de649ffeafb3a6168ac4c92bc66a/yQ/16-1-132310068.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "576"
+                    width     = "1024">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909652/landscape16_9/792/446/dd67de649ffeafb3a6168ac4c92bc66a/NL/16-1-132310068.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "446"
+                    width     = "792">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909652/landscape16_9/640/360/dd67de649ffeafb3a6168ac4c92bc66a/Ii/16-1-132310068.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "360"
+                    width     = "640">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909652/landscape16_9/496/279/dd67de649ffeafb3a6168ac4c92bc66a/dw/16-1-132310068.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "279"
+                    width     = "496">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909652/landscape16_9/360/203/dd67de649ffeafb3a6168ac4c92bc66a/SF/16-1-132310068.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "203"
+                    width     = "360">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909652/landscape16_9/240/135/dd67de649ffeafb3a6168ac4c92bc66a/MO/16-1-132310068.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "135"
+                    width     = "240">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909652/landscape16_9/180/101/dd67de649ffeafb3a6168ac4c92bc66a/nu/16-1-132310068.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "101"
+                    width     = "180">
+                </media:content>
+            </media:group>
+            <description>Richard Brock oli viime toukokuussa metallinpaljastimensa kanssa Englannin Shopshiressa, kun hän teki merkittävän löydön. Brock löysi Englannin kaikkien aikojen suurimman kultakimpaleen.</description>
+        </item>
+        <item>
+            <title>Gazan suurimmasta sairaalasta on jäljellä vain rauniot – video paljastaa tuhojen laajuuden</title>
+            <link>https://www.mtvuutiset.fi/artikkeli/gazan-suurimmasta-sairaalasta-on-jaljella-vain-rauniot-video-paljastaa-tuhojen-laajuuden/8909628</link>
+            <guid isPermaLink="false">cmid://8909628</guid>
+            <pubDate>01 Apr 2024 16:40:20 +0300</pubDate>
+            <category>Uutiset</category>
+            <enclosure url="https://im.mtvuutiset.fi/image/8909626/landscape16_9/1920/1080/d313631a50dd03e93f1c4d3934f701fc/XX/04012024-reuters-al-shifa-sairaala.jpg" type="image/jpeg" />
+            <media:group>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909626/landscape16_9/1024/576/d313631a50dd03e93f1c4d3934f701fc/gH/04012024-reuters-al-shifa-sairaala.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "576"
+                    width     = "1024">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909626/landscape16_9/792/446/d313631a50dd03e93f1c4d3934f701fc/Ue/04012024-reuters-al-shifa-sairaala.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "446"
+                    width     = "792">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909626/landscape16_9/640/360/d313631a50dd03e93f1c4d3934f701fc/MR/04012024-reuters-al-shifa-sairaala.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "360"
+                    width     = "640">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909626/landscape16_9/496/279/d313631a50dd03e93f1c4d3934f701fc/lP/04012024-reuters-al-shifa-sairaala.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "279"
+                    width     = "496">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909626/landscape16_9/360/203/d313631a50dd03e93f1c4d3934f701fc/Vo/04012024-reuters-al-shifa-sairaala.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "203"
+                    width     = "360">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909626/landscape16_9/240/135/d313631a50dd03e93f1c4d3934f701fc/wd/04012024-reuters-al-shifa-sairaala.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "135"
+                    width     = "240">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909626/landscape16_9/180/101/d313631a50dd03e93f1c4d3934f701fc/QZ/04012024-reuters-al-shifa-sairaala.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "101"
+                    width     = "180">
+                </media:content>
+            </media:group>
+            <description>Gazan suurimmasta sairaalasta on jäljellä enää rauniot.</description>
+        </item>
+        <item>
+            <title>Kuskin kovat otteet aiheuttivat palohälytyksen Lappeenrannassa</title>
+            <link>https://www.mtvuutiset.fi/artikkeli/autoilija-poltti-kumia-urakalla-lappeenrannassa-pelastuslaitokselle-halytys-tulipalosta/8909634</link>
+            <guid isPermaLink="false">cmid://8909634</guid>
+            <pubDate>01 Apr 2024 16:29:37 +0300</pubDate>
+            <category>Uutiset</category>
+            <enclosure url="https://im.mtvuutiset.fi/image/8548954/landscape16_9/1920/1080/ea3a58bb52d7a640c8282c3b525eee84/KQ/aop-rengas-renkaat-renkaanvaihto.jpg" type="image/jpeg" />
+            <media:group>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8548954/landscape16_9/1024/576/ea3a58bb52d7a640c8282c3b525eee84/uU/aop-rengas-renkaat-renkaanvaihto.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "576"
+                    width     = "1024">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8548954/landscape16_9/792/446/ea3a58bb52d7a640c8282c3b525eee84/gj/aop-rengas-renkaat-renkaanvaihto.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "446"
+                    width     = "792">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8548954/landscape16_9/640/360/ea3a58bb52d7a640c8282c3b525eee84/AG/aop-rengas-renkaat-renkaanvaihto.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "360"
+                    width     = "640">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8548954/landscape16_9/496/279/ea3a58bb52d7a640c8282c3b525eee84/AI/aop-rengas-renkaat-renkaanvaihto.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "279"
+                    width     = "496">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8548954/landscape16_9/360/203/ea3a58bb52d7a640c8282c3b525eee84/Gp/aop-rengas-renkaat-renkaanvaihto.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "203"
+                    width     = "360">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8548954/landscape16_9/240/135/ea3a58bb52d7a640c8282c3b525eee84/Xm/aop-rengas-renkaat-renkaanvaihto.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "135"
+                    width     = "240">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8548954/landscape16_9/180/101/ea3a58bb52d7a640c8282c3b525eee84/fC/aop-rengas-renkaat-renkaanvaihto.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "101"
+                    width     = "180">
+                </media:content>
+            </media:group>
+            <description>Lappeenrannan ja Luumäen välillä Kuutostien varrella olevasta teollisuushallista nähtiin nousevan savua.</description>
+        </item>
+        <item>
+            <title>Turkmenistanin vapaustilanne uhkaa huonontua: Viranomaiset ilmestyivät Jusupin ovelle lautasantennin takia</title>
+            <link>https://www.mtvuutiset.fi/artikkeli/turkmenistanin-vapaustilanne-uhkaa-huonontua-viranomaiset-ilmestyivat-jusupin-ovelle-lautasantennin-takia/8909618</link>
+            <guid isPermaLink="false">cmid://8909618</guid>
+            <pubDate>01 Apr 2024 15:56:24 +0300</pubDate>
+            <category>Uutiset</category>
+            <enclosure url="https://im.mtvuutiset.fi/image/8206834/landscape16_9/1920/1080/6a4e5192d2c42604fe69635e0e9d241e/AD/aop-kaukosaadin.jpg" type="image/jpeg" />
+            <media:group>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8206834/landscape16_9/1024/576/6a4e5192d2c42604fe69635e0e9d241e/mP/aop-kaukosaadin.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "576"
+                    width     = "1024">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8206834/landscape16_9/792/446/6a4e5192d2c42604fe69635e0e9d241e/da/aop-kaukosaadin.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "446"
+                    width     = "792">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8206834/landscape16_9/640/360/6a4e5192d2c42604fe69635e0e9d241e/GZ/aop-kaukosaadin.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "360"
+                    width     = "640">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8206834/landscape16_9/496/279/6a4e5192d2c42604fe69635e0e9d241e/kT/aop-kaukosaadin.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "279"
+                    width     = "496">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8206834/landscape16_9/360/203/6a4e5192d2c42604fe69635e0e9d241e/TQ/aop-kaukosaadin.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "203"
+                    width     = "360">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8206834/landscape16_9/240/135/6a4e5192d2c42604fe69635e0e9d241e/jB/aop-kaukosaadin.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "135"
+                    width     = "240">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8206834/landscape16_9/180/101/6a4e5192d2c42604fe69635e0e9d241e/vN/aop-kaukosaadin.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "101"
+                    width     = "180">
+                </media:content>
+            </media:group>
+            <description>&#034;Ihmiset eivät näe muuta kuin johtajien henkilökulttia rakentavaa propagandaa.&#034;</description>
+        </item>
+        <item>
+            <title>Ilmatieteen laitos osallistui Uudenmaan löyhkämysteerin selvittämiseen – ilmanlaadussa ei havaittu muutoksia</title>
+            <link>https://www.mtvuutiset.fi/artikkeli/ilmatieteen-laitos-osallistui-uudenmaan-loyhkamysteerin-selvittamiseen-ilmanlaadussa-ei-havaittu-muutoksia/8909606</link>
+            <guid isPermaLink="false">cmid://8909606</guid>
+            <pubDate>01 Apr 2024 15:53:54 +0300</pubDate>
+            <category>Uutiset</category>
+            <enclosure url="https://im.mtvuutiset.fi/image/8909620/landscape16_9/1920/1080/d993bede5ef3445214ab346c011489ab/Rd/lk-helsinki.jpg" type="image/jpeg" />
+            <media:group>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909620/landscape16_9/1024/576/d993bede5ef3445214ab346c011489ab/lx/lk-helsinki.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "576"
+                    width     = "1024">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909620/landscape16_9/792/446/d993bede5ef3445214ab346c011489ab/NI/lk-helsinki.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "446"
+                    width     = "792">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909620/landscape16_9/640/360/d993bede5ef3445214ab346c011489ab/Mf/lk-helsinki.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "360"
+                    width     = "640">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909620/landscape16_9/496/279/d993bede5ef3445214ab346c011489ab/oR/lk-helsinki.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "279"
+                    width     = "496">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909620/landscape16_9/360/203/d993bede5ef3445214ab346c011489ab/Le/lk-helsinki.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "203"
+                    width     = "360">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909620/landscape16_9/240/135/d993bede5ef3445214ab346c011489ab/eD/lk-helsinki.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "135"
+                    width     = "240">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909620/landscape16_9/180/101/d993bede5ef3445214ab346c011489ab/fL/lk-helsinki.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "101"
+                    width     = "180">
+                </media:content>
+            </media:group>
+            <description>Ilmatieteen laitokselta kerrotaan MTV Uutisille, että se raportoi tuulen suunnista ja ilmanlaadusta. </description>
+        </item>
+        <item>
+            <title>ISW: Venäjä on tehnyt suurimman panssarihyökkäyksensä kuukausiin – tämä siitä tiedetään</title>
+            <link>https://www.mtvuutiset.fi/artikkeli/isw-venaja-on-tehnyt-suurimman-panssarihyokkayksensa-kuukausiin-tama-siita-tiedetaan/8909610</link>
+            <guid isPermaLink="false">cmid://8909610</guid>
+            <pubDate>01 Apr 2024 15:52:48 +0300</pubDate>
+            <category>Uutiset</category>
+            <enclosure url="https://im.mtvuutiset.fi/image/8909614/landscape16_9/1920/1080/239315fc061755eb4524c4fecb12ed51/BH/taistelupanssarivaunu-aop.jpg" type="image/jpeg" />
+            <media:group>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909614/landscape16_9/1024/576/239315fc061755eb4524c4fecb12ed51/wP/taistelupanssarivaunu-aop.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "576"
+                    width     = "1024">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909614/landscape16_9/792/446/239315fc061755eb4524c4fecb12ed51/Hq/taistelupanssarivaunu-aop.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "446"
+                    width     = "792">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909614/landscape16_9/640/360/239315fc061755eb4524c4fecb12ed51/fN/taistelupanssarivaunu-aop.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "360"
+                    width     = "640">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909614/landscape16_9/496/279/239315fc061755eb4524c4fecb12ed51/Jn/taistelupanssarivaunu-aop.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "279"
+                    width     = "496">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909614/landscape16_9/360/203/239315fc061755eb4524c4fecb12ed51/LI/taistelupanssarivaunu-aop.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "203"
+                    width     = "360">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909614/landscape16_9/240/135/239315fc061755eb4524c4fecb12ed51/QV/taistelupanssarivaunu-aop.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "135"
+                    width     = "240">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909614/landscape16_9/180/101/239315fc061755eb4524c4fecb12ed51/CJ/taistelupanssarivaunu-aop.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "101"
+                    width     = "180">
+                </media:content>
+            </media:group>
+            <description>Hyökkäys tapahtui ISW:n tietojen perusteella 30. maaliskuuta. Siihen osallistui 36 taistelupanssarivaunua ja 12 rynnäkköpanssaria, joista Ukrainan kerrotaan tuhonneen yhteensä 20.</description>
+        </item>
+        <item>
+            <title>Ateenassa kärvistellään nyt helteen ja Saharan hiekkapölyn keskellä</title>
+            <link>https://www.mtvuutiset.fi/artikkeli/ateenassa-karvistellaan-nyt-helteen-ja-saharan-hiekkapolyn-keskella/8909616</link>
+            <guid isPermaLink="false">cmid://8909616</guid>
+            <pubDate>01 Apr 2024 15:43:39 +0300</pubDate>
+            <category>Uutiset</category>
+            <enclosure url="https://im.mtvuutiset.fi/image/7795956/landscape16_9/1920/1080/6274e6358322d9f2d8a0bf1c2de01729/XR/ateena-saasteet.jpg" type="image/jpeg" />
+            <media:group>
+                <media:content url       = "https://im.mtvuutiset.fi/image/7795956/landscape16_9/1024/576/6274e6358322d9f2d8a0bf1c2de01729/Jd/ateena-saasteet.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "576"
+                    width     = "1024">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/7795956/landscape16_9/792/446/6274e6358322d9f2d8a0bf1c2de01729/GQ/ateena-saasteet.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "446"
+                    width     = "792">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/7795956/landscape16_9/640/360/6274e6358322d9f2d8a0bf1c2de01729/Ub/ateena-saasteet.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "360"
+                    width     = "640">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/7795956/landscape16_9/496/279/6274e6358322d9f2d8a0bf1c2de01729/Hh/ateena-saasteet.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "279"
+                    width     = "496">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/7795956/landscape16_9/360/203/6274e6358322d9f2d8a0bf1c2de01729/qe/ateena-saasteet.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "203"
+                    width     = "360">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/7795956/landscape16_9/240/135/6274e6358322d9f2d8a0bf1c2de01729/GP/ateena-saasteet.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "135"
+                    width     = "240">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/7795956/landscape16_9/180/101/6274e6358322d9f2d8a0bf1c2de01729/Sb/ateena-saasteet.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "101"
+                    width     = "180">
+                </media:content>
+            </media:group>
+            <description>Saharan aavikolta Kreikkaan kulkeutuneet hiekkapölypilvet ovat heikentäneet tänään erityisesti Ateenan ja Thessalonikin ilmanlaatua. </description>
+        </item>
+        <item>
+            <title>Poliisi epäilee Rovaniemen öljypäästössä törkeää ympäristön turmelemista</title>
+            <link>https://www.mtvuutiset.fi/artikkeli/poliisi-epailee-rovaniemen-oljypaastossa-torkeaa-ympariston-turmelemista/8909608</link>
+            <guid isPermaLink="false">cmid://8909608</guid>
+            <pubDate>01 Apr 2024 15:27:14 +0300</pubDate>
+            <category>Uutiset</category>
+            <enclosure url="https://im.mtvuutiset.fi/image/8909612/landscape16_9/1920/1080/8c390570e170d773aec56cab2adcddb5/XF/aop-poliisi-01042023.jpg" type="image/jpeg" />
+            <media:group>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909612/landscape16_9/1024/576/8c390570e170d773aec56cab2adcddb5/Fh/aop-poliisi-01042023.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "576"
+                    width     = "1024">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909612/landscape16_9/792/446/8c390570e170d773aec56cab2adcddb5/PQ/aop-poliisi-01042023.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "446"
+                    width     = "792">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909612/landscape16_9/640/360/8c390570e170d773aec56cab2adcddb5/en/aop-poliisi-01042023.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "360"
+                    width     = "640">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909612/landscape16_9/496/279/8c390570e170d773aec56cab2adcddb5/YR/aop-poliisi-01042023.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "279"
+                    width     = "496">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909612/landscape16_9/360/203/8c390570e170d773aec56cab2adcddb5/vu/aop-poliisi-01042023.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "203"
+                    width     = "360">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909612/landscape16_9/240/135/8c390570e170d773aec56cab2adcddb5/VH/aop-poliisi-01042023.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "135"
+                    width     = "240">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909612/landscape16_9/180/101/8c390570e170d773aec56cab2adcddb5/vL/aop-poliisi-01042023.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "101"
+                    width     = "180">
+                </media:content>
+            </media:group>
+            <description>Poliisi tutkii Rovaniemellä pääsiäissunnuntaina havaittua öljyvahinkoa törkeänä ympäristön turmelemisena.</description>
+        </item>
+        <item>
+            <title>Mieletön tuuri: Mies väisti jättisirkkelin terän</title>
+            <link>https://www.mtvuutiset.fi/artikkeli/mieleton-tuuri-mies-vaisti-jattisirkkelin-teran/8909592</link>
+            <guid isPermaLink="false">cmid://8909592</guid>
+            <pubDate>01 Apr 2024 14:45:09 +0300</pubDate>
+            <category>Uutiset</category>
+            <enclosure url="https://im.mtvuutiset.fi/image/8909596/landscape16_9/1920/1080/8a04cd264513e85be8a4bb5318d7877a/Ql/kameraone-oregon.jpg" type="image/jpeg" />
+            <media:group>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909596/landscape16_9/1024/576/8a04cd264513e85be8a4bb5318d7877a/hV/kameraone-oregon.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "576"
+                    width     = "1024">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909596/landscape16_9/792/446/8a04cd264513e85be8a4bb5318d7877a/hc/kameraone-oregon.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "446"
+                    width     = "792">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909596/landscape16_9/640/360/8a04cd264513e85be8a4bb5318d7877a/Mz/kameraone-oregon.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "360"
+                    width     = "640">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909596/landscape16_9/496/279/8a04cd264513e85be8a4bb5318d7877a/EV/kameraone-oregon.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "279"
+                    width     = "496">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909596/landscape16_9/360/203/8a04cd264513e85be8a4bb5318d7877a/QO/kameraone-oregon.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "203"
+                    width     = "360">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909596/landscape16_9/240/135/8a04cd264513e85be8a4bb5318d7877a/sP/kameraone-oregon.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "135"
+                    width     = "240">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909596/landscape16_9/180/101/8a04cd264513e85be8a4bb5318d7877a/HP/kameraone-oregon.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "101"
+                    width     = "180">
+                </media:content>
+            </media:group>
+            <description>Mies oli vain sekuntien päässä jäädä suurikokoisen sahanterän alle Eugenessa, Yhdysvaltojen Oregonissa.</description>
+        </item>
+        <item>
+            <title>Sääyllätys: 300 salamaa iski Suomessa – meteorologi selittää</title>
+            <link>https://www.mtvuutiset.fi/artikkeli/saayllatys-300-salamaa-iski-suomessa-meteorologi-selittaa/8909556</link>
+            <guid isPermaLink="false">cmid://8909556</guid>
+            <pubDate>01 Apr 2024 14:18:57 +0300</pubDate>
+            <category>Uutiset</category>
+            <enclosure url="https://im.mtvuutiset.fi/image/8909576/landscape16_9/1920/1080/d35ea59c85d8c49cdee82aad399652ba/hF/ukkoskuva.jpg" type="image/jpeg" />
+            <media:group>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909576/landscape16_9/1024/576/d35ea59c85d8c49cdee82aad399652ba/sd/ukkoskuva.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "576"
+                    width     = "1024">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909576/landscape16_9/792/446/d35ea59c85d8c49cdee82aad399652ba/pA/ukkoskuva.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "446"
+                    width     = "792">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909576/landscape16_9/640/360/d35ea59c85d8c49cdee82aad399652ba/wX/ukkoskuva.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "360"
+                    width     = "640">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909576/landscape16_9/496/279/d35ea59c85d8c49cdee82aad399652ba/xF/ukkoskuva.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "279"
+                    width     = "496">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909576/landscape16_9/360/203/d35ea59c85d8c49cdee82aad399652ba/Oa/ukkoskuva.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "203"
+                    width     = "360">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909576/landscape16_9/240/135/d35ea59c85d8c49cdee82aad399652ba/IT/ukkoskuva.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "135"
+                    width     = "240">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8909576/landscape16_9/180/101/d35ea59c85d8c49cdee82aad399652ba/Dz/ukkoskuva.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "101"
+                    width     = "180">
+                </media:content>
+            </media:group>
+            <description>Nyt nähdyn kaltaisia ukkoskuuroja harvemmin nähdään maalis-huhtikuun vaihteessa</description>
+        </item>
+        <item>
+            <title>Tutkija: Opposition historiallisella voitolla on positiivinen vaikutus Turkin demokratialle</title>
+            <link>https://www.mtvuutiset.fi/artikkeli/tutkija-opposition-historiallisella-voitolla-on-positiivinen-vaikutus-turkin-demokratialle/8909570</link>
+            <guid isPermaLink="false">cmid://8909570</guid>
+            <pubDate>01 Apr 2024 14:06:44 +0300</pubDate>
+            <category>Uutiset</category>
+            <enclosure url="https://im.mtvuutiset.fi/image/8614676/landscape16_9/1920/1080/dd580c8769f7709d52aa5539e11e1d48/ap/aop-29-11245864-erdogan.jpg" type="image/jpeg" />
+            <media:group>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8614676/landscape16_9/1024/576/dd580c8769f7709d52aa5539e11e1d48/wl/aop-29-11245864-erdogan.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "576"
+                    width     = "1024">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8614676/landscape16_9/792/446/dd580c8769f7709d52aa5539e11e1d48/Ac/aop-29-11245864-erdogan.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "446"
+                    width     = "792">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8614676/landscape16_9/640/360/dd580c8769f7709d52aa5539e11e1d48/Dz/aop-29-11245864-erdogan.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "360"
+                    width     = "640">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8614676/landscape16_9/496/279/dd580c8769f7709d52aa5539e11e1d48/mJ/aop-29-11245864-erdogan.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "279"
+                    width     = "496">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8614676/landscape16_9/360/203/dd580c8769f7709d52aa5539e11e1d48/sa/aop-29-11245864-erdogan.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "203"
+                    width     = "360">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8614676/landscape16_9/240/135/dd580c8769f7709d52aa5539e11e1d48/Cj/aop-29-11245864-erdogan.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "135"
+                    width     = "240">
+                </media:content>
+                <media:content url       = "https://im.mtvuutiset.fi/image/8614676/landscape16_9/180/101/dd580c8769f7709d52aa5539e11e1d48/lD/aop-29-11245864-erdogan.jpg"
+                    type      = "image/jpeg"
+                    medium    = "image"
+                    isDefault = "false"
+                    height    = "101"
+                    width     = "180">
+                </media:content>
+            </media:group>
+            <description>Presidentti Erdoganille paikallisvaalien tappio on iso ongelma, mutta hänen oma asemansa ei vielä horju.</description>
+        </item>
+    </channel>
+</rss>
