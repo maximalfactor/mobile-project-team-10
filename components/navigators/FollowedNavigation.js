@@ -12,10 +12,18 @@ function TopTabs() {
 
   return (
     <TopTab.Navigator
+
       screenOptions={{
+
+        tabBarIndicatorStyle: { backgroundColor: 'white' },
+
         tabBarStyle: {
-          paddingTop: insets.top
-        }
+          paddingTop: insets.top,
+          backgroundColor: "#F28705"
+        },
+
+        tabBarActiveTintColor: 'white',
+        tabBarInactiveTintColor: 'white'
       }}
     >
       <TopTab.Screen
