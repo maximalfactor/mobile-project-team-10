@@ -6,11 +6,12 @@ export default StyleSheet.create({
       },
       header: {
         position: 'absolute',
-        top: 25,
+        top: 0,
         left: 0,
         right: 0,
         zIndex: 10,
         color: "black",
-        
+        padding: 0,
+        margin: 0
       },
 })
