@@ -34,8 +34,8 @@ function BottomTabs() {
                         name={iconName} size={size} color={color} />;
                     },
 
-                    tabBarActiveTintColor: '#000000',
-                    tabBarInactiveTintColor: '#F28705' 
+                    tabBarActiveTintColor: '#F28705',
+                    tabBarInactiveTintColor: '#B4B4B4'
                 }
             )}
         >

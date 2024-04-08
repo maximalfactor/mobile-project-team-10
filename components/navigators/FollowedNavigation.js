@@ -15,7 +15,7 @@ function TopTabs() {
 
       screenOptions={{
 
-        tabBarIndicatorStyle: { backgroundColor: 'white '},
+        tabBarIndicatorStyle: { backgroundColor: 'white' },
 
         tabBarStyle: {
           paddingTop: insets.top,
