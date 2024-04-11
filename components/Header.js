@@ -8,19 +8,20 @@ const Header = () => {
 
   const _handleSearch = () => console.log('Searching');
 
+  const _handleChange = () => console.log('Changing Language');
+
   const _handleMore = () => console.log('Shown more');
 
   return (
-    <SafeAreaProvider>
         <SafeAreaView style={styles.container}>
         <Appbar.Header style={styles.header}>
-        <Appbar.BackAction onPress={_goBack} />
-        <Appbar.Content title="Title" />
+        {/*<Appbar.BackAction onPress={_goBack} />*/}
+        <Appbar.Content title="Media Moment" />
         <Appbar.Action icon="magnify" onPress={_handleSearch} />
-        <Appbar.Action icon="dots-vertical" onPress={_handleMore} />
+        <Appbar.Action icon="plus-circle" onPress={_handleChange} />
+        <Appbar.Action icon="account-circle" onPress={_handleMore} />
         </Appbar.Header>
         </SafeAreaView>
-    </SafeAreaProvider>
   );
 };
 

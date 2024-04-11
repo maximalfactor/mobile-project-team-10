@@ -5,6 +5,7 @@ export default StyleSheet.create({
         backgroundColor: 'white',
       },
       header: {
+        backgroundColor: '#F28705',
         position: 'absolute',
         top: 0,
         left: 0,
