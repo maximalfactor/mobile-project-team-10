@@ -41,7 +41,7 @@ export default StyleSheet.create({
     },
     infoText: {
         fontSize: 12,
-        fontWeight: 400,
+        fontWeight: "400",
         color: "#9BA5B7"
     },
     category: {
@@ -55,6 +55,6 @@ export default StyleSheet.create({
     },
     newsText: {
         fontSize: 12,
-        fontWeight: 400
+        fontWeight: "400"
     }
 })
