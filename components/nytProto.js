@@ -1,10 +1,9 @@
-{/*
 import { useState } from "react"
 import {View, Text} from "react-native"
 
 const parseString = require('react-native-xml2js').parseString
-export default function HsFetcher() {                             //fetches and compiles data from the hs.fi rss feed
-  const link = "https://www.hs.fi/rss/tuoreimmat.xml"
+export default function NYTFetcher() {                            
+  const link = "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
 
   const [news, setNews] = useState([])
   const [hasFetched, setHasFetched] = useState(false)
@@ -37,7 +36,7 @@ export default function HsFetcher() {                             //fetches and 
       let desc = ""
       let date = new Date()
       let imgLink = ""
-      let categories = []
+      let categories = ["No category"]
       let excess = 0
       let objects = []
       
@@ -46,15 +45,15 @@ export default function HsFetcher() {                             //fetches and 
         
         if(currNode?.TITLE) {
           try {
+            if (currNode.CATEGORY.length >= 2) {
+              categories = currNode.CATEGORY.slice(end=-2)
+            }
             title = currNode.TITLE[0]
-            categories[0] = title.search(/^.+?(?= \|)/)
-            categories[1] = currNode.CATEGORY
-            title = title.replace(/^.+?\| /, "").trim()
             desc = currNode.DESCRIPTION[0]
             date = currNode.PUBDATE
             date = new Date(date)
-            if(currNode?.ENCLOSURE) {
-              imgLink = currNode.ENCLOSURE[0]["$"].URL 
+            if("MEDIA:CONTENT" in currNode) {
+              imgLink = currNode["MEDIA:CONTENT"][0]["$"].URL
             }
             objects.push(createNewsObject(title, desc, date, imgLink, categories))
           }
@@ -72,7 +71,7 @@ export default function HsFetcher() {                             //fetches and 
     }
 
     catch (exception) {
-      setNews([createNewsObject("Error has occured in HS fetching", "Error has occured in HS fetching", "", "", [])])
+      setNews([createNewsObject("Error has occured in NYT fetching", "Error has occured in HS fetching", "", "", [])])
       alert(exception)
     }
     
@@ -92,3 +91,4 @@ export default function HsFetcher() {                             //fetches and 
   parseData(link)
   return <></>
 }
+
