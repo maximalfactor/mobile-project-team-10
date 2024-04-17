@@ -1,12 +1,16 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons'
-import Settings from "../../screens/Settings"
 import TopNavigation from "./TrendingNavigation"
 import FollowedNavigation from "./FollowedNavigation"
+import StackNavigation from "./StackNavigation"
+import { useTheme } from "../../context/ThemeContext"
+import { useFont } from "../../context/FontSizeContext"
 
 const BottomTab = createBottomTabNavigator()
 
 function BottomTabs() {
+    const { theme } = useTheme()
+    const { fontSize } = useFont()
 
     return (
         <BottomTab.Navigator
@@ -14,9 +18,9 @@ function BottomTabs() {
                 headerShown: false,
 
                 tabBarStyle: {
-                    backgroundColor: "white",
+                    backgroundColor: theme.containerBackgroundColor,
                     borderTopColor: "#F28705",
-                    borderTopWidth: 2
+                    borderTopWidth: 2  
                 },
 
                 tabBarIcon: ({ color, size }) => {
@@ -26,7 +30,7 @@ function BottomTabs() {
                     } else if (route.name === 'Followed') {
                       iconName = 'bookmark-plus' 
                     }
-                    else if (route.name === 'Settings') {
+                    else if (route.name === 'StackSettings') {
                       iconName = 'cog'
                     }
 
@@ -41,17 +45,33 @@ function BottomTabs() {
         >
             <BottomTab.Screen
                 name='Bottom Trending'
-                options={{ title: 'Trending'}}
+                options={{
+                    title: 'Trending',
+                    tabBarLabelStyle: {
+                        fontSize: fontSize.bottomNavText
+                    }
+                }}
                 component={TopNavigation}       // Nesting top navigation here
             />
             <BottomTab.Screen
                 name='Followed'
-                options={{ title: 'Followed'}}
-                component={FollowedNavigation}       // Nesting top navigation here
+                options={{
+                    title: 'Followed',
+                    tabBarLabelStyle: {
+                        fontSize: fontSize.bottomNavText
+                    }
+                }}
+                component={FollowedNavigation}      // Nesting followed navigation here
             />
             <BottomTab.Screen
-                name='Settings'
-                component={Settings}
+                name='StackSettings'
+                options={{
+                    title: 'Settings',
+                    tabBarLabelStyle: {
+                        fontSize: fontSize.bottomNavText
+                    }
+                }}
+                component={StackNavigation}         // Nesting stack navigation here
             />
         </BottomTab.Navigator>
     )
