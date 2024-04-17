@@ -8,7 +8,6 @@ export default StyleSheet.create({
         marginLeft: 10,
         marginRight: 10,
         marginBottom: 20,
-        backgroundColor: "white"
     },
     shadow: {
         shadowColor: "#171717",
@@ -40,8 +39,8 @@ export default StyleSheet.create({
         alignItems: "center"
     },
     infoText: {
-        fontSize: 12,
-        fontWeight: "400",
+        //fontSize: 12,
+        fontWeight: 400,
         color: "#9BA5B7"
     },
     category: {

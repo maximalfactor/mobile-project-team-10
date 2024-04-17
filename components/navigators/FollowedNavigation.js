@@ -1,6 +1,6 @@
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
-import { useSafeAreaInsets } from 'react-native-safe-area-context'
-
+import { useTheme } from "../../context/ThemeContext"
+import { useFont } from "../../context/FontSizeContext"
 import Trending from "../../screens/Trending"
 import Science from "../../screens/categories/Science"
 import Sports from "../../screens/categories/Sports"
@@ -8,18 +8,18 @@ import Sports from "../../screens/categories/Sports"
 const TopTab = createMaterialTopTabNavigator()
 
 function TopTabs() {
-  const insets = useSafeAreaInsets()
+  const { theme } = useTheme()
+  const { fontSize } = useFont()
 
   return (
     <TopTab.Navigator
 
       screenOptions={{
 
-        tabBarIndicatorStyle: { backgroundColor: 'white' },
+        tabBarIndicatorStyle: { backgroundColor: theme.tabBarIndicatorColor },
 
         tabBarStyle: {
-          paddingTop: insets.top,
-          backgroundColor: "#F28705"
+          backgroundColor: theme.tabBarColor
         },
 
         tabBarActiveTintColor: 'white',
@@ -28,14 +28,29 @@ function TopTabs() {
     >
       <TopTab.Screen
         name='Followed Trending'
+        options={{
+          tabBarLabelStyle: {
+            fontSize: fontSize.topNavText
+          }
+        }}
         component={Trending}
       />
       <TopTab.Screen
         name='Followed Science'
+        options={{
+          tabBarLabelStyle: {
+            fontSize: fontSize.topNavText
+          }
+        }}
         component={Science}
       />
       <TopTab.Screen
         name='Followed Sports'
+        options={{
+          tabBarLabelStyle: {
+            fontSize: fontSize.topNavText
+          }
+        }}
         component={Sports}
       />
     </TopTab.Navigator>

@@ -1,15 +1,19 @@
 import { Text, View, Image, SafeAreaView, ScrollView } from "react-native"
 import Ellipse from "../assets/svg/Ellipse.svg"
 import styles from "../style/cardStyle"
+import { useTheme } from "../context/ThemeContext"
+import { useFont } from "../context/FontSizeContext"
 
-export default function NewsCard({ title, description, releaseDate }) {
+export default function NewsCard() {
+  const { theme } = useTheme()
+  const { fontSize } = useFont()
 
   const renderCards = () => {
     const cards = []
     for (let i = 0; i < 20; i++) {
       cards.push(
 
-        <View key={i} style={[styles.card, styles.shadow]}>
+        <View key={i} style={[styles.card, styles.shadow, {backgroundColor: theme.cardBackgroundColor}]}>
 
           <Image
             style={styles.image}
@@ -19,17 +23,17 @@ export default function NewsCard({ title, description, releaseDate }) {
           <View style={styles.textContainer}>
 
             <View style={styles.headingContainer}>
-              <Text style={styles.headingText}>Heading</Text>
+              <Text style={[styles.headingText, {color: theme.textColor, fontSize: fontSize.headingText}]}>Heading</Text>
             </View>
 
             <View style={styles.newsContainer}>
-              <Text numberOfLines={4}>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Non tristique interdum faucibus velit.</Text>
+              <Text numberOfLines={4} style={{color: theme.textColor, fontSize: fontSize.newsText}}>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Non tristique interdum faucibus velit.</Text>
             </View>
 
             <View style={styles.infoRow}>
               <Ellipse />
-              <Text style={[styles.category, styles.infoText]}>category</Text>
-              <Text style={styles.infoText}>20/3/2024</Text>
+              <Text style={[styles.category, styles.infoText, {fontSize: fontSize.newsText}]}>category</Text>
+              <Text style={[styles.infoText, {fontSize: fontSize.newsText}]}>20/3/2024</Text>
             </View>
 
           </View>
@@ -43,25 +47,9 @@ export default function NewsCard({ title, description, releaseDate }) {
 
   return (
     <SafeAreaView>
-      <ScrollView>
+      <ScrollView style={{backgroundColor: theme.containerBackgroundColor}}>
         {renderCards()}
       </ScrollView>
     </SafeAreaView>
   )
-  
-  {/*
-    return (
-      <View>
-        <Text>
-          {"title: " + title}
-        </Text>
-        <Text>
-          {"description: " + description}
-        </Text>
-        <Text>
-          {"releaseDate: " + releaseDate}
-        </Text>
-      </View>
-    )
-  */}
 }
