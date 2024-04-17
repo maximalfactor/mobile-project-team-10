@@ -7,7 +7,7 @@ export default function MtvProto() {                             //fetches and c
 
   const [news, setNews] = useState([])
   const [hasFetched, setHasFetched] = useState(false)
-  const [fetchLimit, setFetchLimit] = useState(20)
+  const [fetchLimit, setFetchLimit] = useState(30)
   async function getData(rssLink) {
     if(hasFetched) {
       return -1
@@ -36,6 +36,7 @@ export default function MtvProto() {                             //fetches and c
       let date = new Date()
       let imgLink = ""
       let excess = 0
+      let categories = ["uutinen"]
       let objects = []
       
       for (let i = 1; i - excess < fetchLimit; i++) {         
@@ -47,10 +48,10 @@ export default function MtvProto() {                             //fetches and c
             desc = currNode.DESCRIPTION[0]
             date = currNode.PUBDATE
             date = new Date(date)
-            if(currNode?.ENCLOSURE) {
-              imgLink = currNode.ENCLOSURE[0]["$"].URL
+            if("MEDIA:GROUP" in currNode) {
+              imgLink = currNode["MEDIA:GROUP"][0]["MEDIA:CONTENT"][0]["$"].URL
             }
-            objects.push(createNewsObject(title, desc, date, imgLink))
+            objects.push(createNewsObject(title, desc, date, imgLink, categories))
           }
           catch (exception) {
             continue
@@ -72,38 +73,18 @@ export default function MtvProto() {                             //fetches and c
     
   }
 
-  function createNewsObject(title, desc, date, img) {
+  function createNewsObject(title, desc, date, img, cat) {
     return {
       "title" : title ? title : "No data",
       "description": desc ? desc : "No data",
       "releaseDate": date ? date : "No data",
       "img": img ? img : "",
+      "categories": cat ? cat : [],
     }
   }
 
 
   parseData(link)
-  return news.map(
-    obj => 
-      <NewsCardFoo title={obj.title} description={obj.description} releaseDate={obj.releaseDate} key={news.indexOf(obj)}></NewsCardFoo>
-  )
+  return <></>
 }
 
-function NewsCardFoo({ title, description, releaseDate }) {
-
-  
-    return (
-      <View>
-        <Text>
-          {"title: " + title}
-        </Text>
-        <Text>
-          {"description: " + description}
-        </Text>
-        <Text>
-          {"releaseDate: " + releaseDate}
-        </Text>
-      </View>
-    )
-  
-}

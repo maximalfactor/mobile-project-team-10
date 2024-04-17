@@ -1,5 +1,4 @@
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
-import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { useTheme } from "../../context/ThemeContext"
 import { useFont } from "../../context/FontSizeContext"
 import Trending from "../../screens/Trending"
@@ -9,7 +8,6 @@ import Sports from "../../screens/categories/Sports"
 const TopTab = createMaterialTopTabNavigator()
 
 function TopTabs() {
-  const insets = useSafeAreaInsets()
   const { theme } = useTheme()
   const { fontSize } = useFont()
 
@@ -21,7 +19,6 @@ function TopTabs() {
       tabBarIndicatorStyle: { backgroundColor: theme.tabBarIndicatorColor },
 
       tabBarStyle: {
-        paddingTop: insets.top,
         backgroundColor: theme.tabBarColor
       },
 

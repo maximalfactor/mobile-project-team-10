@@ -54,6 +54,6 @@ export default StyleSheet.create({
     },
     newsText: {
         fontSize: 12,
-        fontWeight: 400
+        fontWeight: "400"
     }
 })
