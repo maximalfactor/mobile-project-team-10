@@ -4,71 +4,87 @@ import {View, Text} from "react-native"
 
 const parseString = require('react-native-xml2js').parseString
 export default function HsFetcher() {                             //fetches and compiles data from the hs.fi rss feed
-  const link = "https://www.hs.fi/rss/tuoreimmat.xml"
-
   const [news, setNews] = useState([])
   const [hasFetched, setHasFetched] = useState(false)
-  const [fetchLimit, setFetchLimit] = useState(30)
+  const [fetchLimit, setFetchLimit] = useState(20)
   async function getData(rssLink) {
-    if(hasFetched) {
-      return -1
-    }
     let response = {}
     await fetch(rssLink).then(res => res.text()).then((st) => parseString(st, {strict: false}, (err, result) => response = result))
-    
-    setHasFetched(true)
     return response
   }
 
-   async function parseData(rssLink) {
+   async function parseData() {
     try {
       if(hasFetched) {
         return
       }
 
-      const xmlDoc =  await getData(rssLink)
-
-      if(xmlDoc == -1) {
+      let feeds = [
+      {
+        "category": "Talous",
+        "link": "https://www.hs.fi/rss/talous.xml",
+        "feed": []
+      },
+      {
+        "category": "Urheilu",
+        "link": "https://www.hs.fi/rss/urheilu.xml",
+        "feed": []
+      },
+      {
+        "category": "Tiede",
+        "link": "https://www.hs.fi/rss/tiede.xml",
+        "feed": []
+      },
+    ]
+    setHasFetched(true)
+    for(let feed of feeds) {
+      data = await getData(feed.link)
+      if(data == -1) {
         return
       }
-      const feed = xmlDoc.RSS.CHANNEL[0].ITEM
-  
+      feed.feed = data
+    }
+
+      
       let title = ""
       let desc = ""
       let date = new Date()
       let imgLink = ""
-      let categories = []
-      let excess = 0
+      let category = ""
       let objects = []
       
-      for (let i = 1; i - excess < fetchLimit; i++) {         
-        let currNode = feed[i]
-        
-        if(currNode?.TITLE) {
-          try {
-            title = currNode.TITLE[0]
-            categories[0] = title.search(/^.+?(?= \|)/)
-            categories[1] = currNode.CATEGORY
-            title = title.replace(/^.+?\| /, "").trim()
-            desc = currNode.DESCRIPTION[0]
-            date = currNode.PUBDATE
-            date = new Date(date)
-            if(currNode?.ENCLOSURE) {
-              imgLink = currNode.ENCLOSURE[0]["$"].URL 
+      for(let feed of feeds) {
+        let excess = 0
+        for (let i = 1; i- excess <= fetchLimit; i++) {         
+          let currNode = feed.feed.RSS.CHANNEL[0].ITEM[i]
+          
+          if(currNode?.TITLE) {
+            try {
+              category = feed.category
+              title = currNode.TITLE[0]
+              title = title.replace(/^.+?\| /, "").trim()
+              desc = currNode.DESCRIPTION[0]
+              date = currNode.PUBDATE
+              date = new Date(date)
+              if(currNode?.ENCLOSURE) {
+                imgLink = currNode.ENCLOSURE[0]["$"].URL 
+              }
+              objects.push(createNewsObject(title, desc, date, imgLink, category))
             }
-            objects.push(createNewsObject(title, desc, date, imgLink, categories))
+            catch (exception) {
+              continue
+            }
           }
-          catch (exception) {
-            continue
+          else {
+            excess++
           }
-        }
-        else {
-          excess++
-        }
 
-        
+          
+        }
       }
       setNews(objects)
+   
+      
     }
 
     catch (exception) {
@@ -84,11 +100,11 @@ export default function HsFetcher() {                             //fetches and 
       "description": desc ? desc : "No data",
       "releaseDate": date ? date : "No data",
       "img": img ? img : "",
-      "categories:": cat ? cat : []
+      "categories:": cat ? cat : ""
     }
   }
 
 
-  parseData(link)
+  parseData()
   return <></>
 }

@@ -3,51 +3,64 @@ import {View, Text} from "react-native"
 
 const parseString = require('react-native-xml2js').parseString
 export default function NYTFetcher() {                            
-  const link = "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
-
   const [news, setNews] = useState([])
   const [hasFetched, setHasFetched] = useState(false)
-  const [fetchLimit, setFetchLimit] = useState(30)
+  const [fetchLimit, setFetchLimit] = useState(20)
+
   async function getData(rssLink) {
-    if(hasFetched) {
-      return -1
-    }
-    let response = {}
-    await fetch(rssLink).then(res => res.text()).then((st) => parseString(st, {strict: false}, (err, result) => response = result))
-    
-    setHasFetched(true)
-    return response
-  }
-
-   async function parseData(rssLink) {
-    try {
-      if(hasFetched) {
-        return
-      }
-
-      const xmlDoc =  await getData(rssLink)
-
-      if(xmlDoc == -1) {
-        return
-      }
-      const feed = xmlDoc.RSS.CHANNEL[0].ITEM
-  
-      let title = ""
-      let desc = ""
-      let date = new Date()
-      let imgLink = ""
-      let categories = ["No category"]
-      let excess = 0
-      let objects = []
+      let response = {}
+      await fetch(rssLink).then(res => res.text()).then((st) => parseString(st, {strict: false}, (err, result) => response = result))
       
-      for (let i = 1; i - excess < fetchLimit; i++) {         
-        let currNode = feed[i]
-        
+      return response
+    }
+  
+  async function parseData(rssLink) {
+  try {
+    if(hasFetched) {
+      return
+    }
+
+    let feeds = [
+      {
+        "category": "Talous",
+        "link": "https://rss.nytimes.com/services/xml/rss/nyt/Economy.xml",
+        "feed": []
+      },
+      {
+        "category": "Urheilu",
+        "link": "https://rss.nytimes.com/services/xml/rss/nyt/Sports.xml",
+        "feed": []
+      },
+      {
+        "category": "Tiede",
+        "link": "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml",
+        "feed": []
+      },
+    ]
+    for(let feed of feeds) {
+      data = await getData(feed.link)
+      if(data == -1) {
+        return
+      }
+      feed.feed = data
+    }
+    setHasFetched(true)
+
+    let title = ""
+    let desc = ""
+    let date = new Date()
+    let imgLink = ""
+    let category =""
+    let objects = []
+    
+    for(let feed of feeds) {
+      let excess = 0
+      currFeed = feed.feed.RSS.CHANNEL[0].ITEM
+      for (let i = 1; i - excess <= fetchLimit && i < currFeed.length; i++) {    
+        currNode = currFeed[i] 
         if(currNode?.TITLE) {
           try {
-            if (currNode.CATEGORY.length >= 2) {
-              categories = currNode.CATEGORY.slice(end=-2)
-            }
+            category = feed.category
             title = currNode.TITLE[0]
             desc = currNode.DESCRIPTION[0]
             date = currNode.PUBDATE
@@ -55,7 +68,7 @@ export default function NYTFetcher() {
             if("MEDIA:CONTENT" in currNode) {
               imgLink = currNode["MEDIA:CONTENT"][0]["$"].URL
             }
-            objects.push(createNewsObject(title, desc, date, imgLink, categories))
+            objects.push(createNewsObject(title, desc, date, imgLink, category))
           }
           catch (exception) {
             continue
@@ -65,17 +78,20 @@ export default function NYTFetcher() {
           excess++
         }
 
-        
+    
       }
-      setNews(objects)
     }
+    console.dir(objects)
 
+    setNews(objects)
+    
+  }
     catch (exception) {
       setNews([createNewsObject("Error has occured in NYT fetching", "Error has occured in HS fetching", "", "", [])])
       alert(exception)
     }
-    
   }
+
 
   function createNewsObject(title, desc, date, img, cat) {
     return {
@@ -83,12 +99,12 @@ export default function NYTFetcher() {
       "description": desc ? desc : "No data",
       "releaseDate": date ? date : "No data",
       "img": img ? img : "",
-      "categories:": cat ? cat : []
+      "categories:": cat ? cat : ""
     }
   }
 
 
-  parseData(link)
+  parseData()
   return <></>
 }
 
