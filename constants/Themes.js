@@ -14,3 +14,12 @@ export const lightTheme =  {
     tabBarIndicatorColor: "#ffffff",
     headerColor: "#F28705"
 }
+export const contrastTheme =  {
+    containerBackgroundColor: "#000000",
+    cardBackgroundColor: "#191919",
+    //testivärejä
+    textColor: "#f3e708",
+    tabBarColor: "#e6f703",
+    tabBarIndicatorColor: "#def205",
+    headerColor: "#f2ea05"
+}
