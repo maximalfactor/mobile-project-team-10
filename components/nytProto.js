@@ -1,25 +1,16 @@
-import { useState } from "react"
-import {View, Text} from "react-native"
-
+import { createNewsObject } from "./fetcherproto"
 const parseString = require('react-native-xml2js').parseString
-export default function NYTFetcher() {                            
-  const [news, setNews] = useState([])
-  const [hasFetched, setHasFetched] = useState(false)
-  const [fetchLimit, setFetchLimit] = useState(20)
 
-  async function getData(rssLink) {
-      let response = {}
-      await fetch(rssLink).then(res => res.text()).then((st) => parseString(st, {strict: false}, (err, result) => response = result))
-      
-      return response
-    }
-  
-  async function parseData(rssLink) {
+async function getData(rssLink) {
+  let response = {}
+  await fetch(rssLink).then(res => res.text()).then((st) => parseString(st, {strict: false}, (err, result) => response = result))
+  return new Promise((resolve) => resolve(response))
+}
+
+export default async function NYTFetcher(fetchLimit) {                            
+  let news = []
+  async function parseData() {
   try {
-    if(hasFetched) {
-      return
-    }
-
     let feeds = [
       {
         "category": "Talous",
@@ -44,14 +35,12 @@ export default function NYTFetcher() {
       }
       feed.feed = data
     }
-    setHasFetched(true)
 
     let title = ""
     let desc = ""
     let date = new Date()
     let imgLink = ""
     let category =""
-    let objects = []
     
     for(let feed of feeds) {
       let excess = 0
@@ -68,7 +57,7 @@ export default function NYTFetcher() {
             if("MEDIA:CONTENT" in currNode) {
               imgLink = currNode["MEDIA:CONTENT"][0]["$"].URL
             }
-            objects.push(createNewsObject(title, desc, date, imgLink, category))
+            news.push(createNewsObject(title, desc, date, imgLink, category))
           }
           catch (exception) {
             continue
@@ -81,30 +70,15 @@ export default function NYTFetcher() {
     
       }
     }
-    console.dir(objects)
-
-    setNews(objects)
     
   }
     catch (exception) {
-      setNews([createNewsObject("Error has occured in NYT fetching", "Error has occured in HS fetching", "", "", [])])
+      news = [createNewsObject("Error has occured in NYT fetching", "Error has occured in HS fetching", "", "", [])]
       alert(exception)
     }
   }
 
-
-  function createNewsObject(title, desc, date, img, cat) {
-    return {
-      "title" : title ? title : "No data",
-      "description": desc ? desc : "No data",
-      "releaseDate": date ? date : "No data",
-      "img": img ? img : "",
-      "categories:": cat ? cat : ""
-    }
-  }
-
-
   parseData()
-  return <></>
+  return new Promise((resolve) => resolve(news))
 }
 

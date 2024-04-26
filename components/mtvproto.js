@@ -1,26 +1,16 @@
-import { useState } from "react"
-import {View, Text} from "react-native"
+import { createNewsObject } from "./fetcherproto"
+
+async function getData(rssLink) {
+  let response = {}
+  await fetch(rssLink).then(res => res.text()).then((st) => parseString(st, {strict: false}, (err, result) => response = result))
+  return new Promise((resolve) => resolve(response))
+}
 
 const parseString = require('react-native-xml2js').parseString
-export default function MtvProto() {                             //fetches and compiles data from the hs.fi rss feed
-
-  const [news, setNews] = useState([])
-  const [hasFetched, setHasFetched] = useState(false)
-  const [fetchLimit, setFetchLimit] = useState(20)
-  async function getData(rssLink) {
-
-    let response = {}
-    await fetch(rssLink).then(res => res.text()).then((st) => parseString(st, {strict: false}, (err, result) => response = result))
-    
-    return response
-  }
-
+export default async function MtvProto(fetchLimit) {                             //fetches and compiles data from the hs.fi rss feed
+  let news = []
    async function parseData() {
     try {
-      if(hasFetched) {
-        return
-      }
-
       let feeds = [
         {
           "category": "Talous",
@@ -45,14 +35,12 @@ export default function MtvProto() {                             //fetches and c
         }
         feed.feed = data
       }
-      setHasFetched(true)
 
       let title = ""
       let desc = ""
       let date = new Date()
       let imgLink = ""
       let category =""
-      let objects = []
       
       for(let feed of feeds) {
         let excess = 0
@@ -70,7 +58,7 @@ export default function MtvProto() {                             //fetches and c
               if("MEDIA:GROUP" in currNode) {
                 imgLink = currNode["MEDIA:GROUP"][0]["MEDIA:CONTENT"][0]["$"].URL
               }
-              objects.push(createNewsObject(title, desc, date, imgLink, category))
+              news.push(createNewsObject(title, desc, date, imgLink, category))
             }
             catch (exception) {
               continue
@@ -82,30 +70,16 @@ export default function MtvProto() {                             //fetches and c
 
           
         }
-      }
-        setNews(objects)
-      
+      }      
     }
 
     catch (exception) {
-      setNews([createNewsObject("Error has occured in Mtv fetching", "Error has occured in Mtv fetching", "", "")])
+      news = [createNewsObject("Error has occured in Mtv fetching", "Error has occured in Mtv fetching", "", "")]
       alert(exception)
     }
     
   }
-
-  function createNewsObject(title, desc, date, img, cat) {
-    return {
-      "title" : title ? title : "No data",
-      "description": desc ? desc : "No data",
-      "releaseDate": date ? date : "No data",
-      "img": img ? img : "",
-      "categories": cat ? cat : [],
-    }
-  }
-
-
-  parseData(link)
-  return <></>
+  parseData()
+  return new Promise((resolve) => resolve(news))
 }
 
