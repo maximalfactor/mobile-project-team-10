@@ -1,35 +1,38 @@
 import React, { useState, useEffect } from 'react'
-import { Appearance } from "react-native"
 import { Switch } from 'react-native-paper'
 import { contrastTheme, lightTheme } from '../constants/Themes'
-import { useContrastTheme } from '../context/ContrastThemeContext'
+import { useTheme } from '../context/ThemeContext'
 
-//yritin ainaki saaha aikaseksi sillä periaattella että contrast mode ois vaa teema joka laitetaa päälle niinku tol toisel switchil vaihetaa light themestä dark themee et täl vaihtais light themestä high contrast themee
 export default function ContrastThemeChanger() {
-    const [themeSwitchOn, setThemeSwitchOn] = useState(false)
-    const [currentTheme, setCurrentTheme] = useState(lightTheme)
-    const { theme, toggleTheme } = useContrastTheme()
+    const { theme, setTheme } = useTheme()
+    const [contrastModeOn, setContrastModeOn] = useState(false)
+    const [previousTheme, setPreviousTheme] = useState(lightTheme) // Määrittää aikasemman teeman
 
-    const onThemeToggleSwitch = () => {
-        setThemeSwitchOn(!themeSwitchOn)
-        const newTheme = !themeSwitchOn ? contrastTheme : lightTheme
-        setCurrentTheme(newTheme)
-        toggleTheme()
-        console.log("contrast changed")
-    }
-
+    // Päivittää teeman
     useEffect(() => {
-        const colorScheme = Appearance.getColorScheme()
-        if (colorScheme === "contrast") {
-            setCurrentTheme(contrastTheme)
+        if (theme === contrastTheme) {
+            setContrastModeOn(true)
         } else {
-            setCurrentTheme(lightTheme)
+            setContrastModeOn(false)
         }
-    }, [])
+    }, [theme])
+    
+    // Jos contrast mode on päällä, switchiä painamalla vaihtaa sen aikaisempaan teemaan
+    // Jos contrast mode ei ole päällä, vaihtaa sen päälle
+    const onThemeToggleSwitch = () => {
+        if (contrastModeOn) {
+            setTheme(previousTheme)             
+            console.log("contrast mode off")
+        } else {
+            setPreviousTheme(theme)
+            setTheme(contrastTheme)     // Contextia ei tarvi erikseen määrittää, kun käytetään setThemeä suoraan tässä changerissa,
+            console.log("contrast mode on")         // eli themeContextin togglethemeä ei käytetä teeman vaihtamiseen, vaan teeman vaihto tehdään kokonaan tässä funktiossa
+        }
+    }
 
     return (
         <Switch
-            value={theme === contrastTheme}
+            value={contrastModeOn}
             onValueChange={onThemeToggleSwitch}
             color="#F28705"
         />

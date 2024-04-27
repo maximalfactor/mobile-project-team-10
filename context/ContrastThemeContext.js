@@ -1,3 +1,7 @@
+
+// Tän filen saa poistaa
+
+/*
 import { createContext, useState, useContext } from 'react';
 import { contrastTheme, lightTheme } from "../constants/Themes"
 
@@ -7,7 +11,7 @@ export const ContrastProvider = ({children}) => {
   const [theme, setTheme] = useState(lightTheme);
 
   const toggleTheme = () => {
-    setTheme(prevTheme => (prevTheme === lightTheme ? contrastTheme : lightTheme));
+    setTheme(prevTheme => (prevTheme === lightTheme ? contrastTheme : lightTheme))
   };
 
   return (
@@ -18,3 +22,4 @@ export const ContrastProvider = ({children}) => {
 };
 
 export const useContrastTheme = () => useContext(ContrastThemeContext)
+*/

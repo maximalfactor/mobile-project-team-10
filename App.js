@@ -9,7 +9,7 @@ import { FontSizeProvider } from './context/FontSizeContext'
 export default function App() {
   return (
     <ThemeProvider>
-      <ContrastProvider>
+      {/*<ContrastProvider>*/}
         <PaperProvider>
           <FontSizeProvider>
             <Header/>
@@ -18,7 +18,7 @@ export default function App() {
             </NavigationContainer>
           </FontSizeProvider>
         </PaperProvider>
-      </ContrastProvider>
+      {/*</ContrastProvider>*/}
     </ThemeProvider>
   )
 }

@@ -11,7 +11,7 @@ import { useNavigation } from '@react-navigation/native'
 
 export default function Settings() {
     const { theme } = useTheme()
-    const { contrastTheme } = useContrastTheme()
+    //const { contrastTheme } = useContrastTheme()
     const navigation = useNavigation()
     const { fontSize } = useFont()
 
@@ -39,11 +39,10 @@ export default function Settings() {
 
             <List.Item
                 title="High Contrast Mode"
-                //tähän kun pistää contrastTheme eikä pelkkä theme nii se valittaa textColor undefined, jos se ei vaikuta siihen miksi switchi ei tee muuta ku pistää console logii viesti nii en oo ihan varma missä tää menee rikki
-                titleStyle={{color: contrastTheme.textColor, fontSize: fontSize.headingText}}
+                titleStyle={{color: theme.textColor, fontSize: fontSize.headingText}}
                 right={(props) => <ContrastThemeChanger {...props} />}
             />
-
+    
             <TouchableOpacity onPress={() => navigation.navigate("Hidden Categories")}>
                 <List.Item
                     title="Hidden categories"
