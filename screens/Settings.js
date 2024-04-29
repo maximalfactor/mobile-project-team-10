@@ -5,13 +5,11 @@ import ThemeChanger from '../components/ThemeChanger'
 import ContrastThemeChanger from '../components/ContrastThemeChanger'
 import FontSizeChanger from '../components/FontSizeChanger'
 import { useTheme } from "../context/ThemeContext"
-import { useContrastTheme } from '../context/ContrastThemeContext'
 import { useFont } from '../context/FontSizeContext'
 import { useNavigation } from '@react-navigation/native'
 
 export default function Settings() {
     const { theme } = useTheme()
-    //const { contrastTheme } = useContrastTheme()
     const navigation = useNavigation()
     const { fontSize } = useFont()
 

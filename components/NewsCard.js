@@ -13,7 +13,7 @@ export default function NewsCard() {
     for (let i = 0; i < 20; i++) {
       cards.push(
 
-        <View key={i} style={[styles.card, styles.shadow, {backgroundColor: theme.cardBackgroundColor}]}>
+        <View key={i} style={[styles.card, styles.shadow, {borderWidth: theme.borderWidth, borderColor: theme.borderColor, backgroundColor: theme.cardBackgroundColor}]}>
 
           <Image
             style={styles.image}
