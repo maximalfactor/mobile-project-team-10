@@ -3,10 +3,12 @@ import { TouchableOpacity, View, Text } from "react-native"
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons'
 import { useFont } from "../context/FontSizeContext"
 import { smallFont, mediumFont, largeFont } from "../constants/FontSize"
+import { useTheme } from "../context/ThemeContext"
 
 export default function FontSizeChanger() {
+    const { theme } = useTheme()
     const { fontSize, setFontSize} = useFont()
-
+    
     const increaseFontSize = () => {
         if (fontSize === smallFont) {
             setFontSize(mediumFont)
@@ -31,13 +33,13 @@ export default function FontSizeChanger() {
         <View style={{flexDirection: "row", alignItems: "center"}}>
 
             <TouchableOpacity onPress={decreaseFontSize}>
-                <MaterialCommunityIcons name="chevron-left" size={24} />
+                <MaterialCommunityIcons name="chevron-left" size={24} style={{color: theme.fontBtnColor}}/>
             </TouchableOpacity>
 
-            <Text style={{fontSize: fontSize.newsText}}>{fontSize === smallFont ? "Small" : fontSize === mediumFont ? "Medium" : "Large"}</Text>
+            <Text style={{fontSize: fontSize.newsText, color: theme.textColor}}>{fontSize === smallFont ? "Small" : fontSize === mediumFont ? "Medium" : "Large"}</Text>
 
             <TouchableOpacity onPress={increaseFontSize}>
-                <MaterialCommunityIcons name="chevron-right" size={24} />
+                <MaterialCommunityIcons name="chevron-right" size={24} style={{color: theme.fontBtnColor}}/>
             </TouchableOpacity>
 
         </View>

@@ -6,7 +6,7 @@ import { useFont } from "../../context/FontSizeContext"
 import { useState, useEffect } from "react"
 import HsFetcher from "../../components/fetcherproto"
 
-export default function Science() {
+export default function Economy() {
   const { theme } = useTheme()
   const { fontSize } = useFont()
   const [newsData, setNewsData] = useState([])
@@ -30,12 +30,12 @@ export default function Science() {
   }, [])
 
   // Filter economy news
-  const scienceNews = newsData.filter(newsItem => newsItem["categories:"] === "Tiede")
+  const economyNews = newsData.filter(newsItem => newsItem["categories:"] === "Talous")
 
   return (
     <ScrollView style={{backgroundColor: theme.containerBackgroundColor}}>
         <View>
-        {scienceNews.map((newsItem, index) => {
+        {economyNews.map((newsItem, index) => {
             const releaseDate = new Date(newsItem.releaseDate)
             const day = releaseDate.getDate()
             const month = releaseDate.getMonth() + 1

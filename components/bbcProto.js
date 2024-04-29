@@ -1,22 +1,15 @@
-import { useState } from "react"
-import {View, Text} from "react-native"
+import { createNewsObject } from "./fetcherproto"
 
-export default function BBCFetcher() {                            
-  const [news, setNews] = useState([])
-  const [hasFetched, setHasFetched] = useState(false)
-  const [fetchLimit, setFetchLimit] = useState(20)
-  async function getData(Link) {
-    let response = {}
-     response = await fetch(Link).then(res => res.json())
-    return response
+async function getData(Link) {
+  let response = {}
+   response = await fetch(Link).then(res => res.json())
+   return new Promise((resolve) => resolve(response))
   }
 
+export default async function BBCFetcher(fetchLimit) {                            
+  let news = []
    async function parseData() {
     try {
-      if(hasFetched) {
-        return
-      }
-
       let feeds = [
         {
           "category": "Talous",
@@ -43,46 +36,32 @@ export default function BBCFetcher() {
         }
         feed.feed = data.articles
       }
-      setHasFetched(true)
   
       let title = ""
       let desc = ""
       let date = new Date()
       let imgLink = ""
       let category = ""
-      let objects = []
       for(let feed of feeds) {
         for(let entry of feed.feed) {
           title = entry.title
           desc = entry.description
           imgLink = entry.urlToImage
           date = entry.publishedAt
-          objects.push(createNewsObject(title, desc, date, imgLink, category))
+          news.push(createNewsObject(title, desc, date, imgLink, category))
         }
       }
-      console.log(objects)
-      setNews(objects)
     }
 
     catch (exception) {
-      setNews([createNewsObject("Error has occured in BBC fetching", "Error has occured in HS fetching", "", "", [])])
+      news = [createNewsObject("Error has occured in BBC fetching", "Error has occured in HS fetching", "", "", [])]
       alert(exception)
     }
     
   }
 
-  function createNewsObject(title, desc, date, img, cat) {
-    return {
-      "title" : title ? title : "No data",
-      "description": desc ? desc : "No data",
-      "releaseDate": date ? date : "No data",
-      "img": img ? img : "",
-      "categories:": cat ? cat : ""
-    }
-  }
-
 
   parseData()
-  return <></>
+  return new Promise((resolve) => resolve(news))
 }
 

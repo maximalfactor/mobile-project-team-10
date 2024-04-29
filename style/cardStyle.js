@@ -7,7 +7,8 @@ export default StyleSheet.create({
         borderRadius: 25,
         marginLeft: 10,
         marginRight: 10,
-        marginBottom: 20,
+        marginBottom: 10,
+        marginTop: 10,
     },
     shadow: {
         shadowColor: "#171717",
@@ -17,7 +18,7 @@ export default StyleSheet.create({
     },
     image: {
         width: 150,
-        height: 150,
+        height: "auto",
         borderTopLeftRadius: 25,
         borderBottomLeftRadius: 25
     },
