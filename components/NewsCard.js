@@ -40,9 +40,9 @@ export default function NewsCard() {
       const month = releaseDate.getMonth() + 1
       const year = releaseDate.getFullYear()
       const formattedDate = `${day}/${month}/${year}`
-  
+
       return (
-        <View key={index} style={[styles.card, styles.shadow, {backgroundColor: theme.cardBackgroundColor}]}>
+        <View key={index} style={[styles.card, styles.shadow, {borderWidth: theme.borderWidth, borderColor: theme.borderColor, backgroundColor: theme.cardBackgroundColor}]}>
           <Image
             style={styles.image}
             //src={"https://images.unsplash.com/photo-1508612761958-e931d843bdd5?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}

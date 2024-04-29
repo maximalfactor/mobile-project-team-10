@@ -41,14 +41,14 @@ export default function App() {
 
   return allNews.length != 0 ? (
     <ThemeProvider>
-      <PaperProvider>
-        <FontSizeProvider>
-          <Header/>
-          <NavigationContainer>
-            <BottomNavigation />
-          </NavigationContainer>
-        </FontSizeProvider>
-      </PaperProvider>
+        <PaperProvider>
+          <FontSizeProvider>
+            <Header/>
+            <NavigationContainer>
+              <BottomNavigation />
+            </NavigationContainer>
+          </FontSizeProvider>
+        </PaperProvider>
     </ThemeProvider>
   ):
   <Text>Loading...</Text>

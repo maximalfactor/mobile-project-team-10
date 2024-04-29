@@ -16,3 +16,14 @@ export const lightTheme =  {
     headerColor: "#F28705",
     fontBtnColor: "#000000"
 }
+export const contrastTheme =  {
+    containerBackgroundColor: "#000000",
+    cardBackgroundColor: "#000000",
+    textColor: "#F28705",
+    tabBarColor: "#000000",
+    tabBarIndicatorColor: "#F28705",
+    headerColor: "#F28705",
+    borderColor: "#F28705",
+    borderWidth: 2,
+    fontBtnColor: "#000000"
+}
