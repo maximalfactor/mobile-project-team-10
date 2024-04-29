@@ -4,6 +4,7 @@ import { useFont } from "../../context/FontSizeContext"
 import Trending from "../../screens/Trending"
 import Science from "../../screens/categories/Science"
 import Sports from "../../screens/categories/Sports"
+import Economy from "../../screens/categories/Economy"
 
 const TopTab = createMaterialTopTabNavigator()
 
@@ -52,6 +53,15 @@ function TopTabs() {
           }
         }}
         component={Sports}
+      />
+      <TopTab.Screen
+        name='Economy'
+        options={{
+          tabBarLabelStyle: {
+            fontSize: fontSize.topNavText
+          }
+        }}
+        component={Economy}
       />
     </TopTab.Navigator>
   )
