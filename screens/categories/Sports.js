@@ -4,33 +4,25 @@ import styles from "../../style/cardStyle"
 import { useTheme } from "../../context/ThemeContext"
 import { useFont } from "../../context/FontSizeContext"
 import { useState, useEffect } from "react"
-import HsFetcher from "../../components/fetcherproto"
+import { filterNews } from "../../components/filterNews"
 
 export default function Sports() {
   const { theme } = useTheme()
   const { fontSize } = useFont()
-  const [newsData, setNewsData] = useState([])
+  const [sportsNews, setSportsNews] = useState([])
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const hs = await HsFetcher(10)
-        //const bbc = await BBCFetcher(1)
-        //const nyt = await NYTFetcher(1)
-        //const mtv = await MtvProto(1)
-        //const news = [...hs, ...bbc, ...nyt, ...mtv]
-        console.log(hs)
-        setNewsData(hs)
+        const filteredNews = await filterNews(10)
+        setSportsNews(filteredNews.Urheilu)
       } catch (error) {
-        console.log("Error fetching news: ", error)
+        console.log("Error fetching economy news: ", error)
       }
     }
 
     fetchData()
   }, [])
-
-  // Filter economy news
-  const sportsNews = newsData.filter(newsItem => newsItem["categories:"] === "Urheilu")
 
   return (
     <ScrollView style={{backgroundColor: theme.containerBackgroundColor}}>

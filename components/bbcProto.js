@@ -61,7 +61,7 @@ export default async function BBCFetcher(fetchLimit) {
   }
 
 
-  parseData()
+  await parseData()
   return new Promise((resolve) => resolve(news))
 }
 

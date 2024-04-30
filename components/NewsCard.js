@@ -4,28 +4,20 @@ import Ellipse from "../assets/svg/Ellipse.svg"
 import styles from "../style/cardStyle"
 import { useTheme } from "../context/ThemeContext"
 import { useFont } from "../context/FontSizeContext"
-import HsFetcher from "./fetcherproto"
-import BBCFetcher from "./bbcProto"
-import NYTFetcher from "./nytProto"
-import MtvProto from "./mtvproto"
+import { filterNews } from "./filterNews"
 
 export default function NewsCard() {
   const { theme } = useTheme()
   const { fontSize } = useFont()
-  const [newsData, setNewsData] = useState([])
+  const [allNews, setAllNews] = useState([])
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const hs = await HsFetcher(10)
-        //const bbc = await BBCFetcher(1)
-        //const nyt = await NYTFetcher(1)
-        //const mtv = await MtvProto(1)
-        //const news = [...hs, ...bbc, ...nyt, ...mtv]
-        console.log(hs)
-        setNewsData(hs)
+        const filteredNews = await filterNews(5)
+        setAllNews(filteredNews.All)
       } catch (error) {
-        console.log("Error fetching news: ", error)
+        console.log("Error fetching all news: ", error)
       }
     }
 
@@ -33,7 +25,7 @@ export default function NewsCard() {
   }, [])
 
   const renderCards = () => {
-    return newsData.map((newsItem, index) => {
+    return allNews.map((newsItem, index) => {
 
       const releaseDate = new Date(newsItem.releaseDate)
       const day = releaseDate.getDate()

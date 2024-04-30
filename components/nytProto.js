@@ -78,7 +78,7 @@ export default async function NYTFetcher(fetchLimit) {
     }
   }
 
-  parseData()
+  await parseData()
   return new Promise((resolve) => resolve(news))
 }
 

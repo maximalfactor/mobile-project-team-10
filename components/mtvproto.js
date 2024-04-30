@@ -79,7 +79,7 @@ export default async function MtvProto(fetchLimit) {                            
     }
     
   }
-  parseData()
+  await parseData()
   return new Promise((resolve) => resolve(news))
 }
 
