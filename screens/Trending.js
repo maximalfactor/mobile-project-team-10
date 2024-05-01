@@ -3,7 +3,7 @@ import NewsCard from "../components/NewsCard"
 
 export default function Science() {
     return (
-        <View>
+        <View style={{ flex: 1, justifyContent: "center" }}>
             <NewsCard />
         </View>
     )
