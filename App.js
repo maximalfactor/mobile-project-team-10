@@ -4,18 +4,25 @@ import { PaperProvider } from 'react-native-paper'
 import Header from './components/Header'
 import { ThemeProvider } from './context/ThemeContext'
 import { FontSizeProvider } from './context/FontSizeContext'
-
+import { useState } from "react"
+import {FilterNameContext, FilterSourceContext} from "./context/filterContext"
 
 
 export default function App() {
+  const [filterSource, setFilterSource] = useState("fi")
+  const [filterName, setFilterName] = useState("")
     return (
     <ThemeProvider>
         <PaperProvider>
           <FontSizeProvider>
-            <Header/>
-            <NavigationContainer>
-              <BottomNavigation />
-            </NavigationContainer>
+            <FilterNameContext.Provider value={filterName}>
+            <FilterSourceContext.Provider value={filterSource}>
+              <Header setFilterName={setFilterName} setFilterSource={setFilterSource}/>
+              <NavigationContainer>
+                <BottomNavigation />
+              </NavigationContainer>
+            </FilterSourceContext.Provider>
+            </FilterNameContext.Provider>
           </FontSizeProvider>
         </PaperProvider>
     </ThemeProvider>

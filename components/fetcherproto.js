@@ -1,12 +1,13 @@
 const parseString = require('react-native-xml2js').parseString
-export function createNewsObject(title, desc, date, img, cat, link) {
+export function createNewsObject(title, desc, date, img, cat, link, source) {
   return {
     "title" : title ? title : "No data",
     "description": desc ? desc : "No data",
     "releaseDate": date ? date : "No data",
     "img": img ? img : "",
     "categories:": cat ? cat : "",
-    "articleLink": link ? link : ""
+    "articleLink": link ? link : "",
+    "source": source ? source: ""
   }
 }
 
@@ -69,7 +70,7 @@ export default async function HsFetcher(fetchLimit) {                           
               if(currNode?.ENCLOSURE) {
                 imgLink = currNode.ENCLOSURE[0]["$"].URL 
               }
-              news.push(createNewsObject(title, desc, date, imgLink, category, link))
+              news.push(createNewsObject(title, desc, date, imgLink, category, link, "hs"))
             }
             catch (exception) {
               continue

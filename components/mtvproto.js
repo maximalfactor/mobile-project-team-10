@@ -59,7 +59,7 @@ export default async function MtvProto(fetchLimit) {                            
               if("MEDIA:GROUP" in currNode) {
                 imgLink = currNode["MEDIA:GROUP"][0]["MEDIA:CONTENT"][0]["$"].URL
               }
-              news.push(createNewsObject(title, desc, date, imgLink, category, link))
+              news.push(createNewsObject(title, desc, date, imgLink, category, link, "mtv"))
             }
             catch (exception) {
               continue

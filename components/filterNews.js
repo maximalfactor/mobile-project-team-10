@@ -15,10 +15,10 @@ export async function filterNews(fetchLimit) {
         const news = [...hs, /*...bbc,*/ ...nyt, ...mtv]
 
         const filteredNews = {
-            Talous: news.filter(newsItem => newsItem["categories:"] === "Talous"),
-            Urheilu: news.filter(newsItem => newsItem["categories:"] === "Urheilu"),
-            Tiede: news.filter(newsItem => newsItem["categories:"] === "Tiede"),
-            All: news
+            "Talous": news.filter(newsItem => newsItem["categories:"] === "Talous"),
+            "Urheilu": news.filter(newsItem => newsItem["categories:"] === "Urheilu"),
+            "Tiede": news.filter(newsItem => newsItem["categories:"] === "Tiede"),
+            "All": news
         }
 
         return filteredNews
