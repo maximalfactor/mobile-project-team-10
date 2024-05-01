@@ -4,16 +4,11 @@ import { PaperProvider } from 'react-native-paper'
 import Header from './components/Header'
 import { ThemeProvider } from './context/ThemeContext'
 import { FontSizeProvider } from './context/FontSizeContext'
-import HsFetcher from "./components/fetcherproto"
-import NYTFetcher from "./components/nytProto"
-import BBCFetcher from "./components/bbcProto"
-import MtvProto from "./components/mtvproto"
-import { useState } from "react"
-import { Text } from "react-native"
 
 
 
 export default function App() {
+    return (
     <ThemeProvider>
         <PaperProvider>
           <FontSizeProvider>
@@ -24,4 +19,5 @@ export default function App() {
           </FontSizeProvider>
         </PaperProvider>
     </ThemeProvider>
+    )
 }

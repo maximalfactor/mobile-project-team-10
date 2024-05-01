@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react"
-import { Text, View, Image, SafeAreaView, ScrollView } from "react-native"
+import { useEffect, useState, useCallback } from "react"
+import { Text, View, Image, SafeAreaView, ScrollView, Linking, Pressable } from "react-native"
 import Ellipse from "../assets/svg/Ellipse.svg"
 import styles from "../style/cardStyle"
 import { useTheme } from "../context/ThemeContext"
@@ -20,8 +20,9 @@ export default function NewsCard() {
         console.log("Error fetching all news: ", error)
       }
     }
-
-    fetchData()
+    if(allNews.length == 0) {
+      fetchData()
+    }
   }, [])
 
   const renderCards = () => {
@@ -33,31 +34,42 @@ export default function NewsCard() {
       const year = releaseDate.getFullYear()
       const formattedDate = `${day}/${month}/${year}`
 
+      const handlePress = (url) => {
+        url = url.toString()
+        const supported = Linking.canOpenURL(url);
+        if (supported) {
+          Linking.openURL(url);
+        } else {
+          Alert.alert(`Don't know how to open this URL: ${url}`);
+        }
+      }
       return (
-        <View key={index} style={[styles.card, styles.shadow, {borderWidth: theme.borderWidth, borderColor: theme.borderColor, backgroundColor: theme.cardBackgroundColor}]}>
-          <Image
-            style={styles.image}
-            //src={"https://images.unsplash.com/photo-1508612761958-e931d843bdd5?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
-            src={newsItem.img}
-          />
-          <View style={styles.textContainer}>
+        <Pressable key={index}  onPress={() => handlePress(new String(newsItem.articleLink))}>
+          <View style={[styles.card, styles.shadow, {borderWidth: theme.borderWidth, borderColor: theme.borderColor, backgroundColor: theme.cardBackgroundColor}]}>
+            <Image
+              style={styles.image}
+              //src={"https://images.unsplash.com/photo-1508612761958-e931d843bdd5?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+              src={newsItem.img}
+            />
+            <View style={styles.textContainer}>
 
-            <View style={styles.headingContainer}>
-              <Text style={[styles.headingText, {color: theme.textColor, fontSize: fontSize.headingText}]}>{newsItem.title}</Text>
-            </View>
+              <View style={styles.headingContainer}>
+                <Text style={[styles.headingText, {color: theme.textColor, fontSize: fontSize.headingText}]}>{newsItem.title}</Text>
+              </View>
 
-            <View style={styles.newsContainer}>
-              <Text numberOfLines={4} style={{color: theme.textColor, fontSize: fontSize.newsText}}>{newsItem.description}</Text>
-            </View>
-      
-            <View style={styles.infoRow}>
-              <Ellipse />
-              <Text style={[styles.category, styles.infoText, {fontSize: fontSize.newsText}]}>{newsItem["categories:"]}</Text>
-              <Text style={[styles.infoText, {fontSize: fontSize.newsText}]}>{formattedDate}</Text>
-            </View>
+              <View style={styles.newsContainer}>
+                <Text numberOfLines={4} style={{color: theme.textColor, fontSize: fontSize.newsText}}>{newsItem.description}</Text>
+              </View>
+        
+              <View style={styles.infoRow}>
+                <Ellipse />
+                <Text style={[styles.category, styles.infoText, {fontSize: fontSize.newsText}]}>{newsItem["categories:"]}</Text>
+                <Text style={[styles.infoText, {fontSize: fontSize.newsText}]}>{formattedDate}</Text>
+              </View>
 
+            </View>
           </View>
-        </View>
+        </Pressable>
       )
     })
   }

@@ -41,7 +41,7 @@ export default async function MtvProto(fetchLimit) {                            
       let date = new Date()
       let imgLink = ""
       let category =""
-      
+      let link = ""
       for(let feed of feeds) {
         let excess = 0
         currFeed = feed.feed.RSS.CHANNEL[0].ITEM
@@ -55,10 +55,11 @@ export default async function MtvProto(fetchLimit) {                            
               desc = currNode.DESCRIPTION[0]
               date = currNode.PUBDATE
               date = new Date(date)
+              link = currNode.LINK
               if("MEDIA:GROUP" in currNode) {
                 imgLink = currNode["MEDIA:GROUP"][0]["MEDIA:CONTENT"][0]["$"].URL
               }
-              news.push(createNewsObject(title, desc, date, imgLink, category))
+              news.push(createNewsObject(title, desc, date, imgLink, category, link))
             }
             catch (exception) {
               continue

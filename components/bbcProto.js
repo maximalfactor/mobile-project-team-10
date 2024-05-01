@@ -42,13 +42,15 @@ export default async function BBCFetcher(fetchLimit) {
       let date = new Date()
       let imgLink = ""
       let category = ""
+      let link = ""
       for(let feed of feeds) {
         for(let entry of feed.feed) {
           title = entry.title
           desc = entry.description
           imgLink = entry.urlToImage
           date = entry.publishedAt
-          news.push(createNewsObject(title, desc, date, imgLink, category))
+          link = entry.url
+          news.push(createNewsObject(title, desc, date, imgLink, category, link))
         }
       }
     }

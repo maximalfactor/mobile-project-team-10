@@ -1,11 +1,12 @@
 const parseString = require('react-native-xml2js').parseString
-export function createNewsObject(title, desc, date, img, cat) {
+export function createNewsObject(title, desc, date, img, cat, link) {
   return {
     "title" : title ? title : "No data",
     "description": desc ? desc : "No data",
     "releaseDate": date ? date : "No data",
     "img": img ? img : "",
-    "categories:": cat ? cat : ""
+    "categories:": cat ? cat : "",
+    "articleLink": link ? link : ""
   }
 }
 
@@ -48,6 +49,7 @@ export default async function HsFetcher(fetchLimit) {                           
       let date = new Date()
       let imgLink = ""
       let category = ""
+      let link
       
       for(let feed of feeds) {
         
@@ -63,10 +65,11 @@ export default async function HsFetcher(fetchLimit) {                           
               desc = currNode.DESCRIPTION[0]
               date = currNode.PUBDATE
               date = new Date(date)
+              link = currNode.LINK
               if(currNode?.ENCLOSURE) {
                 imgLink = currNode.ENCLOSURE[0]["$"].URL 
               }
-              news.push(createNewsObject(title, desc, date, imgLink, category))
+              news.push(createNewsObject(title, desc, date, imgLink, category, link))
             }
             catch (exception) {
               continue
