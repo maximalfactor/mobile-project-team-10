@@ -58,7 +58,7 @@ export default async function NYTFetcher(fetchLimit) {
             if("MEDIA:CONTENT" in currNode) {
               imgLink = currNode["MEDIA:CONTENT"][0]["$"].URL
             }
-            news.push(createNewsObject(title, desc, date, imgLink, category, link))
+            news.push(createNewsObject(title, desc, date, imgLink, category, link, "nyt"))
           }
           catch (exception) {
             continue
