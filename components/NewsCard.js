@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react"
-import { Text, View, Image, SafeAreaView, ScrollView, Linking, Pressable } from "react-native"
+import { Text, View, Image, SafeAreaView, ScrollView, Linking, Pressable, ActivityIndicator } from "react-native"
 import Ellipse from "../assets/svg/Ellipse.svg"
 import styles from "../style/cardStyle"
 import { useTheme } from "../context/ThemeContext"
@@ -20,12 +20,14 @@ export default function NewsCard({category = ""}) {
   const { theme } = useTheme()
   const { fontSize } = useFont()
   const [allNews, setAllNews] = useState([])
+  const [loading, setLoading] = useState(true)
   const nameContext = useContext(FilterNameContext)
   const sourceContext = useContext(FilterSourceContext)
   async function fetchData() {
     try {
       const filteredNews = await filterNews(5)
       setAllNews(filteredNews[!category ? "All" : category])
+      setLoading(false)
     } catch (error) {
       console.log("Error fetching all news: ", error)
     }
@@ -87,7 +89,13 @@ export default function NewsCard({category = ""}) {
       }
     })
   }
-  if (allNews.length > 0) {
+  if (loading) {
+    return (
+      <View>
+        <ActivityIndicator size="large"/>
+      </View>
+    )
+  } else if (allNews.length > 0) {
     return (
       <SafeAreaView>
         <ScrollView style={{backgroundColor: theme.containerBackgroundColor}}>
@@ -96,8 +104,6 @@ export default function NewsCard({category = ""}) {
       </SafeAreaView>
     )
   }
-  else {
-    return <Loading></Loading>
-  }
+  
   
 }
