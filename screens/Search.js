@@ -1,15 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Text, SafeAreaView, TextInput, FlatList, View, Pressable, Linking } from "react-native";
 import { filterNews } from "../components/filterNews";
 import styles from "../style/cardStyle"
 import { useTheme } from "../context/ThemeContext"
 import { useFont } from "../context/FontSizeContext"
+import { FilterSourceContext } from "../context/filterContext";
+
+const sourceMapping = {
+    "en": ["nyt", "bbc"],
+    "fi": ["mtv", "hs"]
+}
 
 export default function Search() {
     const { theme } = useTheme()
     const { fontSize } = useFont()
     const [allNews, setAllNews] = useState([])
     const [filteredNews, setFilteredNews] = useState([])
+    const sourceContext = useContext(FilterSourceContext)
 
     useEffect(() => {
         async function fetchData() {
@@ -52,7 +59,9 @@ export default function Search() {
 
             <FlatList
                 style={{height: "100%", backgroundColor: theme.containerBackgroundColor}}
-                data={filteredNews}
+                data={filteredNews.filter((newsItem) =>
+                    sourceMapping[sourceContext].includes(newsItem.source)
+                )}
                 renderItem={({ item, index }) => (
                     <Pressable onPress={() => handlePress(new String(item.articleLink))}>
                         <View style={[styles.card, styles.shadow, { borderWidth: theme.borderWidth, borderColor: theme.borderColor, backgroundColor: theme.cardBackgroundColor }]}>
@@ -76,4 +85,5 @@ export default function Search() {
             />
         </SafeAreaView>
     )
+    
 }

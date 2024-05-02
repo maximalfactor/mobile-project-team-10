@@ -11,10 +11,9 @@ export default function SearchStackNavigation() {
         name="SearchStack"
         component={Search}
         options={{
-          headerShown: false, // Optionally hide the header for the Search screen
+          headerShown: false // Optionally hide the header for the Search screen
         }}
       />
-      {/* Add more screens for the Search flow if needed */}
     </Stack.Navigator>
-  );
+  )
 }
