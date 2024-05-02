@@ -5,7 +5,8 @@ export const darkTheme =  {
     tabBarColor: "#000000",
     tabBarIndicatorColor: "#F28705",
     headerColor: "#F28705",
-    fontBtnColor: "#ffffff"
+    fontBtnColor: "#ffffff",
+    borderColor: "#ffffff"
 }
 export const lightTheme =  {
     containerBackgroundColor: "#ffffff",
@@ -14,7 +15,8 @@ export const lightTheme =  {
     tabBarColor: "#F28705",
     tabBarIndicatorColor: "#ffffff",
     headerColor: "#F28705",
-    fontBtnColor: "#000000"
+    fontBtnColor: "#000000",
+    borderColor: "gray"
 }
 export const contrastTheme =  {
     containerBackgroundColor: "#000000",
