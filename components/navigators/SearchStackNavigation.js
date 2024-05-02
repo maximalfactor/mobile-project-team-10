@@ -8,7 +8,7 @@ export default function SearchStackNavigation() {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="Search"
+        name="SearchStack"
         component={Search}
         options={{
           headerShown: false, // Optionally hide the header for the Search screen
