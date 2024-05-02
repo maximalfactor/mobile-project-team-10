@@ -30,9 +30,9 @@ const Header = ( {setFilterName, setFilterSource}) => {
       <SafeAreaView edges={['top', 'left', 'right']} style={[{flex:1}, styles.container]} />
       <Appbar.Header style={styles.header}>
         {/*<Appbar.BackAction onPress={_goBack} />*/}
-        <Appbar.Content title="Media Moment" />
+        <Appbar.Content title="Media Moment" style={{display: hideSearch ? "auto" : "none"}}/>
         <Searchbar value={searchStr} onIconPress={()=>setHideSearch(!hideSearch)}
-         onChangeText={(st) => {setSearchStr(st); setFilterName(st)}} style={{display: hideSearch ? "none": "auto"}}></Searchbar>
+         onChangeText={(st) => {setSearchStr(st); setFilterName(st)}} style={{display: hideSearch ? "none": "auto", minWidth: 250, marginBottom: 25}} placeholder="Search news..."></Searchbar>
         <Appbar.Action icon="magnify" onPress={_handleSearch} />
         <Appbar.Action icon={({size, color}) => {
           if(sourceContext =="fi") {

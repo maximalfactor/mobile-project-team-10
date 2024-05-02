@@ -6,7 +6,9 @@ export default StyleSheet.create({
         alignItems: 'center'
       },
       inputContainer: {
-          marginTop: '20%'
+          marginTop: '20%',
+          justifyContent: 'center',
+        alignItems: 'center'
 
       },
       textinput: {
@@ -36,10 +38,10 @@ export default StyleSheet.create({
       buttonText: {
         color:'black',
         fontWeight: '700',
-        fontsize: 30
+        fontSize: 30
       },
       currentusertext: {
-        fontsize: 20,
+        fontSize: 20,
         margin: 20
       },
       currentuserbg: {
