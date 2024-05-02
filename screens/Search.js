@@ -51,7 +51,7 @@ export default function Search() {
             />
 
             <FlatList
-                style={{backgroundColor: theme.containerBackgroundColor}}
+                style={{height: "100%", backgroundColor: theme.containerBackgroundColor}}
                 data={filteredNews}
                 renderItem={({ item, index }) => (
                     <Pressable onPress={() => handlePress(new String(item.articleLink))}>
