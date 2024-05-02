@@ -3,7 +3,6 @@ import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons'
 import TopNavigation from "./TrendingNavigation"
 import FollowedNavigation from "./FollowedNavigation"
 import StackNavigation from "./StackNavigation"
-import SearchStackNavigation from "./SearchStackNavigation"
 import { useTheme } from "../../context/ThemeContext"
 import { useFont } from "../../context/FontSizeContext"
 
@@ -73,13 +72,6 @@ function BottomTabs() {
                     }
                 }}
                 component={StackNavigation}         // Nesting stack navigation here
-            />
-            <BottomTab.Screen
-                name='Search'
-                options={{
-                    tabBarButton: () => null
-                }}
-                component={SearchStackNavigation}         // Nesting search stack navigation here
             />
         </BottomTab.Navigator>
     )
