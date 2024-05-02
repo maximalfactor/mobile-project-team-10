@@ -5,6 +5,20 @@ async function getData(rssLink) {
   await fetch(rssLink).then(res => res.text()).then((st) => parseString(st, {strict: false}, (err, result) => response = result))
   return new Promise((resolve) => resolve(response))
 }
+monthMapping = {
+  "Jan": 0,
+  "Feb": 1,
+  "Mar": 2,
+  "Apr": 3,
+  "May": 4,
+  "Jun": 5,
+  "Jul": 6,
+  "Aug": 7,
+  "Sep": 8,
+  "Oct": 9,
+  "Nov": 10,
+  "Dec": 11
+}
 
 const parseString = require('react-native-xml2js').parseString
 export default async function MtvProto(fetchLimit) {                             //fetches and compiles data from the hs.fi rss feed
@@ -38,7 +52,7 @@ export default async function MtvProto(fetchLimit) {                            
 
       let title = ""
       let desc = ""
-      let date = new Date()
+      let _date = new Date()
       let imgLink = ""
       let category =""
       let link = ""
@@ -53,13 +67,16 @@ export default async function MtvProto(fetchLimit) {                            
               category = feed.category
               title = currNode.TITLE[0]
               desc = currNode.DESCRIPTION[0]
-              date = currNode.PUBDATE
-              date = new Date(date)
+              _date = currNode.PUBDATE[0]
+              _date = _date.split(" ")
+              time = _date[3]
+              time = time.split(":")
+              _date = new Date(Date.UTC(_date[2], monthMapping[_date[1]], _date[0], time[0], time[1], time[2]))
               link = currNode.LINK
               if("MEDIA:GROUP" in currNode) {
                 imgLink = currNode["MEDIA:GROUP"][0]["MEDIA:CONTENT"][0]["$"].URL
               }
-              news.push(createNewsObject(title, desc, date, imgLink, category, link, "mtv"))
+              news.push(createNewsObject(title, desc, _date, imgLink, category, link, "mtv"))
             }
             catch (exception) {
               continue
