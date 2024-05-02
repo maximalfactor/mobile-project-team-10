@@ -50,6 +50,7 @@ export default async function BBCFetcher(fetchLimit) {
           imgLink = entry.urlToImage
           date = entry.publishedAt
           link = entry.url
+          category = feed.category
           news.push(createNewsObject(title, desc, date, imgLink, category, link, "bbc"))
         }
       }
