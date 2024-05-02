@@ -17,8 +17,8 @@ export default function App() {
           <FontSizeProvider>
             <FilterNameContext.Provider value={filterName}>
             <FilterSourceContext.Provider value={filterSource}>
-              <Header setFilterName={setFilterName} setFilterSource={setFilterSource}/>
               <NavigationContainer>
+                <Header setFilterName={setFilterName} setFilterSource={setFilterSource}/>
                 <BottomNavigation />
               </NavigationContainer>
             </FilterSourceContext.Provider>

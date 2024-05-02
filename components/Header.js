@@ -5,13 +5,19 @@ import { Appbar } from 'react-native-paper';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import {FilterSourceContext} from "../context/filterContext"
 import { Image } from "react-native";
+import { useNavigation } from '@react-navigation/native';
 import FinnishFlag from "../assets/svg/Flag_of_Finland.svg"
 import BritishFlag from "../assets/svg/Flag_of_the_United_Kingdom.svg"
 const Header = ( {setFilterName, setFilterSource}) => {
   sourceContext = React.useContext(FilterSourceContext)
+
+  const navigation = useNavigation()
+
   const _goBack = () => console.log('Went back');
 
-  const _handleSearch = () => console.log('Searching');
+  const _handleSearch = () => {
+    navigation.navigate("Search")
+  }
 
   const _handleChange = () => { if(sourceContext=="fi") {setFilterSource("en")} else {setFilterSource("fi")}};
 
